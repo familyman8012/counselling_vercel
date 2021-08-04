@@ -1,0 +1,15 @@
+DB_CONN_STR=mongodb+srv://familyman80:ntheatre80@cluster0.wu7ox.mongodb.net/counselling?retryWrites=true&w=majority
+
+Google_ID=1076124737874-p6257gsleh5m6q8okh8b07h77nqp6ri9.apps.googleusercontent.com
+Google_SECRET=zDrWlFIuZ0PHW756e8t0Np4y
+Google_REDIRECT_URL=http://localhost:3000/api/auth/callback/google
+KAKAO_ID=ba97bcb07a4bf9788035121637c0b3ec
+KAKAO_SECRET=gDkSu5QEkXzbnP1u01pOvriJFPpV8hWF
+
+NEXTAUTH_URL=http://localhost:3000/
+DATABASE_URL=mongodb+srv://familyman80:ntheatre80@cluster0.wu7ox.mongodb.net/counselling?retryWrites=true&w=majority
+
+S3_ACCESS_ID=AKIAWBU33XUH2R3WQFX5 
+S3_ACCESS_KEY=FrRumOiRRVst5ED5qFEhOqevmCdy1/VQslWOUzhV
+S3_BUCKET_NAME=direct-upload-s3-bucket-testthing7
+S3_REGION=ap-northeast-2
