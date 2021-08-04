@@ -6,8 +6,11 @@ class MyDocument extends Document {
     return (
       <Html lang="ko">
         <Head>
-          <Script src="https://cdn.bootpay.co.kr/js/bootpay-3.3.1.min.js"></Script>
-          <Script src="js/channeltalk.js"></Script>
+          <script
+            defer
+            src="https://cdn.bootpay.co.kr/js/bootpay-3.3.1.min.js"
+          ></script>
+          <script defer src="js/channeltalk.js"></script>
         </Head>
         <body>
           <Main />
