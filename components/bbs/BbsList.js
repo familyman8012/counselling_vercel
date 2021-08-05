@@ -95,19 +95,21 @@ function BbsList({ swrdata, category }) {
             );
           })}
         </ul>
-        {category === "새로운소식" &&
-        session?.user.email !== "master@master.com" ? null : (
-          <button className="btn_write" onClick={post_write}>
-            글쓰기
-          </button>
-        )}
+        <div className="wrap_bbs_bottom">
+          {category === "새로운소식" &&
+          session?.user.email !== "master@master.com" ? null : (
+            <button className="btn_write" onClick={post_write}>
+              글쓰기
+            </button>
+          )}
+          <Pagination
+            total={totalCount}
+            current={currentPage}
+            pageSize={pageSize}
+            onChange={(page) => setCurrentPage(page)}
+          />
+        </div>
       </div>
-      <Pagination
-        total={totalCount}
-        current={currentPage}
-        pageSize={pageSize}
-        onChange={(page) => setCurrentPage(page)}
-      />
     </>
   );
 }

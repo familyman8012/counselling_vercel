@@ -13,10 +13,7 @@ const PriceItem = ({ priceItem }) => {
         {priceItem.map((item, i) => (
           <li key={item.price} onClick={() => dispatch(priceSelect(i + 1))}>
             {item.title} :{" "}
-            {item.price
-              .toString()
-              .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-            원
+            {item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원
           </li>
         ))}
       </ul>
@@ -71,7 +68,7 @@ const Product = () => {
                 <div className="box_sel_price">
                   <p className="tit">상담선택*</p>
                   <div
-                    className="selected_info"
+                    className={"selected_info " + (isModal ? "on" : "")}
                     onClick={() => dispatch(onisModal())}
                   >
                     {selectPrice !== null
@@ -96,9 +93,11 @@ const Product = () => {
           </div>
           <ul className="wrap_tab">
             <li className="on">구매평</li>
-            <li>Q&A</li>
+            <li onClick={() => alert("준비 중입니다. 채널톡으로 문의주세요.")}>
+              Q&A
+            </li>
           </ul>
-          <ReviewList />
+          <ReviewList nowCategory={detailInfo[0].title} />
         </div>
       )}
     </>

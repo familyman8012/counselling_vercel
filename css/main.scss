@@ -78,9 +78,21 @@ h6 {
             color: #000;
           }
           .selected_info {
+            position: relative;
             font-size: 14px;
             padding: 8px 24px 8px 12px;
             border: 1px solid #ddd;
+            cursor: pointer;
+            &:after {
+              content: "▼";
+              position: absolute;
+              top: 50%;
+              right: 10px;
+              transform: translateY(-50%);
+            }
+            &.on::after {
+              transform: translateY(-50%) rotate(180deg);
+            }
           }
           .price {
             position: absolute;
@@ -153,11 +165,18 @@ h6 {
       background: #ff5a5f;
     }
   }
+  .rc-pagination {
+    margin: 40px 0;
+  }
 }
 
 .owl-treatments__img,
 .owl-treatments__text {
   cursor: pointer;
+}
+
+.owl-treatments__img img {
+  margin: 0 auto;
 }
 
 .login-wrap {
@@ -181,6 +200,7 @@ h6 {
     overflow: hidden;
     height: 97px;
     padding: 5px 0 11px 0;
+    cursor: pointer;
 
     &.active {
       height: auto;
@@ -442,6 +462,9 @@ h6 {
 }
 .wrap_board {
   overflow: hidden;
+  .rc-pagination {
+    padding-top: 3px;
+  }
 }
 .board {
   overflow: hidden;
@@ -860,10 +883,16 @@ h6 {
   }
 }
 
+.parallax {
+  .ant-spin-spinning {
+    position: static;
+  }
+}
+
 .wrap_map {
   display: flex;
 }
-.container {
+.wrap_offer {
   .ant-spin-spinning {
     position: fixed;
     top: 50%;
@@ -933,4 +962,39 @@ h6 {
   width: 40px;
   border-radius: 30px;
   text-align: center;
+}
+
+.rc-pagination {
+  display: flex;
+  justify-content: center;
+  button:after {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.spin_container {
+  margin: 20px 0;
+  margin-bottom: 20px;
+  padding: 30px 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.tab_view_category {
+  margin-top: 20px;
+  font-size: 13px;
+  span {
+    cursor: pointer;
+    &:first-child {
+      margin-right: 10px;
+    }
+    &.on {
+      font-weight: bold;
+      color: #1890ff;
+      padding-bottom: 3px;
+      border-bottom: 1px solid #1890ff;
+    }
+  }
 }

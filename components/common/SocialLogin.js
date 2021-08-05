@@ -32,7 +32,7 @@ export default function SocialLogin({ providers, csrfToken }) {
               className={provider.name}
               onClick={() =>
                 signIn(provider.id, {
-                  callbackUrl: "http://localhost:3000",
+                  callbackUrl: "/",
                 })
               }
             >

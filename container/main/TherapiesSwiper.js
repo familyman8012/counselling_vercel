@@ -5,15 +5,15 @@ import { useSelector } from "react-redux";
 function TherapiesSwiper() {
   const { consulting } = useSelector((state) => state.product);
   const sliderOption = {
-    320: {
+    500: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    500: {
+    700: {
       slidesPerView: 2,
       spaceBetween: 30,
     },
-    1920: {
+    800: {
       slidesPerView: 3,
       spaceBetween: 30,
     },

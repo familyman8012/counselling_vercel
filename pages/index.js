@@ -122,7 +122,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="content-box-02 pad-top-60 pad-bt-80">
+        <div className="content-box-02 pad-top-60 pad-bt-80 wrap_offer">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
@@ -323,7 +323,7 @@ export default function Home() {
               <div className="col-lg-12">
                 <p className="testimonials__subtitle">Testimonials</p>
                 <h3 className="testimonials__title">
-                  <span>BEST REVIEW</span>
+                  <span>COUNSELING REVIEW</span>
                 </h3>
               </div>
             </div>

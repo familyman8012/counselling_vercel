@@ -56,17 +56,19 @@ const Slider = ({ item, breakPoint, multiSlider }) => {
     </>
   ) : (
     <Swiper className="mySwiper">
-      {item.map((slides) => {
-        const { cont, imgUrl, userName, joinCalss } = slides;
+      {item?.map((slides, i) => {
+        const { content, name, reviewTitle } = slides;
         return (
-          <SwiperSlide key={slides.joinCalss}>
+          <SwiperSlide key={slides.reviewTitle + i}>
             <div className="owl-theme-01__item">
               <div className="owl-theme-01__item-text">
-                <p>{cont}</p>
+                <p>{content}</p>
               </div>
               <div className="owl-theme-01__item-user">
-                <h3 className="owl-theme-01__item-user-name">{userName}</h3>
-                <p className="owl-theme-01__item-user-subtitle">{joinCalss}</p>
+                <h3 className="owl-theme-01__item-user-name">{name}</h3>
+                <p className="owl-theme-01__item-user-subtitle">
+                  {reviewTitle}
+                </p>
               </div>
             </div>
           </SwiperSlide>

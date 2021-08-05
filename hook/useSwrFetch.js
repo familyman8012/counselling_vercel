@@ -7,7 +7,7 @@ function useSwrFetch(url) {
     return resp.data;
   };
 
-  const { mutate, data, error } = useSwr(url, fetcher);
+  const { mutate, data, error, isLoading } = useSwr(url, fetcher);
   return {
     mutate: mutate,
     swrdata: data,

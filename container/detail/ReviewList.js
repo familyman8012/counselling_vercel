@@ -7,30 +7,54 @@ import Moment from "../../node_modules/react-moment/dist/index";
 import ReviewPopup from "../../container/detail/ReviewPopup";
 import useInputs from "../../hook/useInputs";
 import Pagination from "rc-pagination";
+import { Spin } from "antd";
 
 import "rc-pagination/assets/index.css";
 
-export default function ReviewList() {
+export default function ReviewList({ nowCategory }) {
   const [session] = useSession();
   const userid = session?.user.uid;
-  const { swrdata, mutate } = useSwrFetch("/api/product/comment/");
+  const { swrdata, mutate, isLoading } = useSwrFetch("/api/product/comment/");
   const [activeId, setActiveId] = useState(0);
 
   const [pageSize, setPageSize] = useState(10);
   const [totalCount, setTotalCount] = useState(10);
   const [currentPage, setCurrentPage] = useState(1);
+  const [viewAll, setViewAll] = useState(true);
 
   // 페이징겸, 리스트 만들기.
   useEffect(() => {
-    setTotalCount(swrdata?.length);
-  }, [swrdata]);
+    {
+      viewAll
+        ? setTotalCount(swrdata?.length)
+        : setTotalCount(
+            swrdata?.filter((el, index) => el.reviewTitle == nowCategory).length
+          );
+    }
+  }, [viewAll, swrdata]);
 
-  if (Array.isArray(swrdata) && swrdata.length > 0) {
-    var swrdataList = swrdata?.filter(
-      (_, index) =>
-        (currentPage - 1) * pageSize <= index && index < currentPage * pageSize
-    );
-  }
+  console.log(swrdata);
+
+  const dataList = useCallback(() => {
+    if (Array.isArray(swrdata) && swrdata.length > 0) {
+      if (viewAll) {
+        return swrdata?.filter(
+          (_, index) =>
+            (currentPage - 1) * pageSize <= index &&
+            index < currentPage * pageSize
+        );
+      } else {
+        return swrdata?.filter(
+          (el, index) =>
+            el.reviewTitle == nowCategory &&
+            (currentPage - 1) * pageSize <= index &&
+            index < currentPage * pageSize
+        );
+      }
+    }
+  }, [viewAll, swrdata, currentPage]);
+
+  const swrdataList = dataList();
 
   // 인풋 수정
   const [state, onChange] = useInputs({
@@ -84,52 +108,72 @@ export default function ReviewList() {
       <h2 className="tit">구매평 </h2>
       <p className="txt">상품을 구매하신 분들이 작성한 리뷰입니다.</p>
       <button onClick={writeItem}>구매평 작성</button>
-      <ul className="wrap_review_list">
-        {swrdataList?.map((x, i) => {
-          return (
-            <li
-              key={x._id}
-              onClick={() => setActiveId(x._id)}
-              className={activeId === x._id ? "active" : ""}
-            >
-              <div className="wrap_left">
-                <Rate disabled={true} tooltips={x.desc} value={x.value} />
-                <div className="txt_area">
-                  {x.content?.split("\n").map((line) => {
-                    return (
-                      <>
-                        {line}
-                        <br />
-                      </>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <div className="box_right">
-                <div className="box_name">{x.name}</div>
-                <div className="createAt">
-                  <Moment format="YYYY/MM/DD">{x.createdAt}</Moment>
-                </div>
-                <div>{x.reviewTitle}</div>
-                {userid == x.userid && (
-                  <div className="box_btns">
-                    <span
-                      onClick={() => {
-                        modifyInit(x.name, x.content, x._id);
-                        setOpenModal(true);
-                      }}
-                    >
-                      수정
-                    </span>
-                    <span onClick={() => deleteItem(x._id)}>삭제</span>
+      <div className="tab_view_category">
+        <span
+          className={viewAll === true && "on"}
+          onClick={() => setViewAll(true)}
+        >
+          모든 상담 리뷰
+        </span>
+        <span
+          className={viewAll === false && "on"}
+          onClick={() => setViewAll(false)}
+        >
+          현재 카테고리 리뷰
+        </span>
+      </div>
+      {isLoading ? (
+        <div className="spin_container">
+          <Spin />
+        </div>
+      ) : (
+        <ul className="wrap_review_list">
+          {swrdataList?.map((x, i) => {
+            return (
+              <li
+                key={x._id}
+                onClick={() => setActiveId(x._id)}
+                className={activeId === x._id ? "active" : ""}
+              >
+                <div className="wrap_left">
+                  <Rate disabled={true} tooltips={x.desc} value={x.value} />
+                  <div className="txt_area">
+                    {x.content?.split("\n").map((line) => {
+                      return (
+                        <>
+                          {line}
+                          <br />
+                        </>
+                      );
+                    })}
                   </div>
-                )}
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+                </div>
+
+                <div className="box_right">
+                  <div className="box_name">{x.name}</div>
+                  <div className="createAt">
+                    <Moment format="YYYY/MM/DD">{x.createdAt}</Moment>
+                  </div>
+                  <div>{x.reviewTitle}</div>
+                  {userid == x.userid && (
+                    <div className="box_btns">
+                      <span
+                        onClick={() => {
+                          modifyInit(x.name, x.content, x._id);
+                          setOpenModal(true);
+                        }}
+                      >
+                        수정
+                      </span>
+                      <span onClick={() => deleteItem(x._id)}>삭제</span>
+                    </div>
+                  )}
+                </div>
+              </li>
+            );
+          })}
+        </ul>
+      )}
       <Pagination
         total={totalCount}
         current={currentPage}

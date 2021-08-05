@@ -22,7 +22,6 @@ function Header() {
               <div className="login_box">
                 {!session && (
                   <>
-                    <span onClick={() => signIn()}>signIn Test</span>
                     <Link href="/signin">
                       <a>Login</a>
                     </Link>
