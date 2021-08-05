@@ -15,7 +15,7 @@ const PriceItem = ({ priceItem }) => {
             {item.title} :{" "}
             {item.price
               .toString()
-              .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}
+              .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
             원
           </li>
         ))}
@@ -77,7 +77,7 @@ const Product = () => {
                     {selectPrice !== null
                       ? `${selectPrice[0].title} : ${selectPrice[0].price
                           .toString()
-                          .replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",")}원`
+                          .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원`
                       : "상담선택(필수)"}
                   </div>
                   {isModal && <PriceItem priceItem={priceItem} />}
