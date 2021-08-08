@@ -4,6 +4,7 @@ import TherapiesSwiper from "../container/main/TherapiesSwiper";
 import StateCounter from "../container/main/StateCounter";
 import BestReview from "../container/main/BestReview";
 import VideoPlay from "../components/common/VideoPlay";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -29,10 +30,14 @@ export default function Home() {
                   당신의 삶을 행복으로
                   <br /> 이끌 것입니다.
                 </h2>
-                <a className="btn-04" href="#">
-                  우리에 대하여
-                </a>
-                <a className="btn-05" href="#">
+
+                <a className="btn-04">우리에 대하여</a>
+                <a
+                  className="btn-05"
+                  href="http://pf.kakao.com/_aFQms/chat"
+                  target="_blank"
+                  rel="noopner noreferrer"
+                >
                   예약하기
                 </a>
               </div>
@@ -106,7 +111,7 @@ export default function Home() {
                   </h3>
                   <div className="about-us-text-01 mar-bt-27">
                     <p>
-                      우리는 엄격한 심사를 통과한 명문대 심리학과 석사이상의
+                      우리는 엄격한 심사를 통과한 심리학과 석사이상의
                       심리상담사들 및 현실에서의 문제를 해결할 수 있는 다양한
                       분야의 전문가들, 심리학자, 심리상담사, 심리코치들로 구성한
                       최적의 규모를 가진 회사입니다. 현실에서의 문제를 해결하기
@@ -152,7 +157,7 @@ export default function Home() {
               <div className="col-sm-6 col-md-6 col-lg-6">
                 <p className="subtitle-01">FREE COUNSULTING</p>
                 <h3 className="title-02">
-                  유료상담 전<span>무료진단</span>
+                  유료상담 전 <span>무료진단</span>
                 </h3>
                 <div className="counselling-text-01">
                   <p>
@@ -169,9 +174,9 @@ export default function Home() {
                 </div>
                 <a
                   className="counselling-btn"
-                  href="http://pf.kakao.com/_xgxfuBs/chat"
+                  href="http://pf.kakao.com/_aFQms/chat"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopner noreferrer"
                 >
                   상담신청
                 </a>
@@ -181,7 +186,7 @@ export default function Home() {
                   <a
                     href="http://pf.kakao.com/_xgxfuBs/chat"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopner noreferrer"
                   >
                     <img src="images/counselling/counselling_01.png" alt="" />
                   </a>
@@ -355,11 +360,11 @@ export default function Home() {
                 className="faq-content-02__email"
                 href="mailto:companyname@gmail.com"
               >
-                seolleimg@gmail.com
+                mindcarecenter777@gmail.com
               </a>
               <p className="faq-content-02__phone">
                 Call:
-                <span>800 326 9160</span>
+                <span>010 6807 8707</span>
               </p>
             </div>
           </div>

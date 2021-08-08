@@ -14,6 +14,7 @@ function Payment() {
   const { detailInfo, selectPrice } = useSelector((state) => state.product);
   const [session] = useSession();
   const [phone, setPhone] = useState(session?.user.phone);
+  const [agree, setAgree] = useState(false);
   const [completeData, setcompleteData] = useState({
     data: { item_name: "", order_id: "", payment_data: "" },
   });
@@ -35,6 +36,9 @@ function Payment() {
   const handleOnChage = (e) => {
     setPhone(e.target.value);
   };
+  const handleCheck = (e) => {
+    setAgree(!agree);
+  };
 
   //결제 bootpay
   const payOption = {
@@ -49,6 +53,15 @@ function Payment() {
   const { price, name, pg, username, email, userid } = payOption;
 
   function onClickRequest() {
+    console.log("phone phone", phone);
+    if (phone === "" || phone === undefined) {
+      alert("구매자 전화번호를 입력하셔야합니다.");
+      return;
+    }
+    if (!agree) {
+      alert("구매조건 확인 및 결제진행에 동의를 해주셔야 결제가 진행됩니다.");
+      return;
+    }
     window.BootPay.request({
       //실제 복사하여 사용시에는 모든 주석을 지운 후 사용하세요
       price, //실제 결제되는 가격
@@ -214,7 +227,12 @@ function Payment() {
             </p>
           </div>
           <div className="box box_agree">
-            <input type="checkbox" checked="false" />
+            <input
+              type="checkbox"
+              checked={agree}
+              value={agree}
+              onChange={handleCheck}
+            />
             구매조건 확인 및 결제진행에 동의
           </div>
           <div className="btn_pay" onClick={onClickRequest}>

@@ -9,7 +9,7 @@ function Freebanner() {
             <div className="action-box-01__wrapp">
               <h3 className="action-box-01__title">
                 매일 선착순 10분 무료진단!
-                <span>행복한심리상담센터 카톡채널</span>
+                <span>마인드케어센터 카톡채널</span>
               </h3>
               <p className="action-box-01__subtitle">
                 최고의 심리상담과 심리코칭을 통해 내담자 분들이 진정한 행복을
@@ -17,8 +17,13 @@ function Freebanner() {
               </p>
             </div>
             <div className="action-box-01__btn-wrapp">
-              <a className="action-box-01__btn" href="appointment.html">
-                무료진단 신청하기
+              <a
+                className="action-box-01__btn"
+                href="http://pf.kakao.com/_aFQms/chat"
+                target="_blank"
+                rel="noopner noreferrer"
+              >
+                무료진단 & 정규상담 문의
               </a>
             </div>
           </div>

@@ -34,8 +34,13 @@ function Header() {
                   </>
                 )}
               </div>
-              <a className="btn-app" href="appointment.html">
-                지금 즉시! 무료진단
+              <a
+                className="btn-app"
+                href="http://pf.kakao.com/_aFQms/chat"
+                target="_blank"
+                rel="noopner noreferrer"
+              >
+                무료진단 &amp; 정규상담 문의
               </a>
             </div>
           </div>

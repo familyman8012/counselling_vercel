@@ -82,10 +82,10 @@ const QuillEditor = (props) => {
       const fileName = file.name;
 
       const config = {
-        bucketName: "direct-upload-s3-bucket-testthing7",
-        region: "ap-northeast-2",
-        accessKeyId: "AKIAWBU33XUH2R3WQFX5",
-        secretAccessKey: "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",
+        bucketName: process.env.NEXT_PUBLIC_S3_BUCKET_NAME,
+        region: process.env.NEXT_PUBLIC_S3_REGION,
+        accessKeyId: process.env.NEXT_PUBLIC_S3_ACCESS_ID,
+        secretAccessKey: process.env.NEXT_PUBLIC_S3_ACCESS_KEY,
       };
 
       const ReactS3Client = new S3(config);

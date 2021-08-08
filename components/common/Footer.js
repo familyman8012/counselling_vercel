@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import Popout from "react-popout";
+import Link from "next/link";
 
 const Footer = () => {
+  const [escroPop, setEscroPop] = useState(false);
   return (
     <footer className="wrapp-footer">
       <div className="footer-box-01">
@@ -12,8 +15,8 @@ const Footer = () => {
               </a>
               <div className="widget widget-text">
                 <p>
-                  Our clinic largest private mental health partnership, with a
-                  carefully selected nationwide team of Psychiatrists.
+                  마인드케어센터는 주의깊게 선택된 훌륭한 심리상담선생님들과
+                  함께하는 심리상담센터입니다.
                 </p>
                 <ul className="social-list-01">
                   <li>
@@ -41,75 +44,79 @@ const Footer = () => {
             </div>
             <div className="col-sm-3 col-md-3 col-lg-3">
               <div className="widget widget-contacts">
-                <h3 className="widget-title">Our Head Clinick</h3>
+                <h3 className="widget-title">마인드케어센터정보</h3>
                 <ul className="widget-contacts__list">
                   <li>
-                    455 Wallstreet St., New York, VA 12364 United States of
-                    America
+                    상호/대표자명: 윤은석 (설레임)
+                    <br /> 사업자등록번호 755-11-01726
+                  </li>
+                  <li>
+                    <a
+                      href="http://www.ftc.go.kr/www/bizCommList.do?key=232"
+                      target="_blank"
+                      rel="noopner noreferrer"
+                      style={{ color: "#5c656d" }}
+                    >
+                      사업자정보확인
+                    </a>
                   </li>
                   <li>
                     <a
                       className="contacts-email"
-                      href="maito:companyname@gmail.com"
+                      href="maito:mindcarecenter777@gmail.com"
+                      target="_blank"
+                      rel="noopner noreferrer"
                     >
-                      companyname@gmail.com
+                      mindcarecenter777@gmail.com
                     </a>
                   </li>
-                  <li>826 696 8370</li>
+                  <li>010 6807 8707</li>
                   <li>
-                    <p className="work-time">
-                      We Work for You Every Day from
-                      <span>8.00 AM</span> to
-                      <span>6.00 PM</span>
-                    </p>
+                    주소 : 서울특별시 금천구 가산디지털단지 에스턴타워 14층
+                  </li>
+                  <li>
+                    <div style={{ display: "flex" }}>
+                      <span>
+                        입금계좌 : KB국민은행
+                        <br /> 597337-04-004922
+                      </span>
+                      <span
+                        onClick={() => setEscroPop(true)}
+                        style={{ marginLeft: "30px" }}
+                      >
+                        <img
+                          src="http://img1.kbstar.com/img/escrow/escrowcmark.gif"
+                          border="0"
+                          style={{ width: "50px", height: "50px" }}
+                        />
+                      </span>
+                      {escroPop && (
+                        <Popout url="http://escrow1.kbstar.com/quics?page=B009111&cc=b010807%3Ab008491&mHValue=21f382593bf991a2f4bb21f9172d2554" />
+                      )}
+                    </div>
                   </li>
                 </ul>
               </div>
             </div>
             <div className="col-sm-3 col-md-3 col-lg-3">
               <div className="widget widget-latest-news">
-                <h3 className="widget-title">Our Latest News</h3>
-                <ul className="widget-latest-news__list">
+                <h3 className="widget-title">
+                  무료진단신청 및 정식상담문의 안내
+                </h3>
+                <ul className="widget-contacts__list">
                   <li>
-                    <h4 className="latest-news-title">
-                      <a href="#">
-                        Am i Depressed? 6 Signs You Should Know About
-                      </a>
-                    </h4>
-                    <p className="latest-news-date">25 September, 2017</p>
-                  </li>
-                  <li>
-                    <h4 className="latest-news-title">
-                      <a href="#">
-                        Anxiety Disorder: Which Therapy is Right for Me
-                      </a>
-                    </h4>
-                    <p className="latest-news-date">25 September, 2017</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="col-sm-3 col-md-3 col-lg-3">
-              <div className="widget widget-quick-links">
-                <h3 className="widget-title">Quick Links</h3>
-                <ul className="widget-quick-links__list">
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">About</a>
-                  </li>
-                  <li>
-                    <a href="#">Services</a>
-                  </li>
-                  <li>
-                    <a href="#">News</a>
-                  </li>
-                  <li>
-                    <a href="#">Gallery</a>
-                  </li>
-                  <li>
-                    <a href="#">Contacts</a>
+                    무료진단신청 및 정식상담문의
+                    <br />
+                    <span>10.00 AM</span> ~<span>10.00 PM</span>
+                    <br />
+                    카카오 채널
+                    <a
+                      href="http://pf.kakao.com/_aFQms/chat"
+                      target="_blank"
+                      rel="noopner noreferrer"
+                    >
+                      https://pf.kakao.com/_aFQms/chat
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -122,15 +129,18 @@ const Footer = () => {
           <div className="row">
             <div className="col-lg-12">
               <p className="copy-footer-01__text">
-                &copy; 2017 OPTIMA. All rights reserved.
+                <span>&copy; 2021 MINDCARE CENTER. All rights reserved.</span>
+                <Link href="/yakwan">
+                  <a>이용약관</a>
+                </Link>
+                <Link href="/policy">
+                  <a>개인정보처리방침</a>
+                </Link>
               </p>
             </div>
           </div>
         </div>
       </div>
-      <a href="#" className="back2top" title="Back to Top">
-        Back to Top
-      </a>
     </footer>
   );
 };

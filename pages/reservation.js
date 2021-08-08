@@ -4,6 +4,8 @@ import TotalProgram from "../container/reservation/TotalProgram";
 import Freebanner from "../components/Freebanner";
 import Features from "../container/reservation/Features";
 import StrengthTab from "../container/reservation/StrengthTab";
+import Accordion from "../components/common/Accordion";
+import FaqAccodion from "../container/reservation/FaqAccodion";
 
 const reservation = () => {
   return (
@@ -84,7 +86,7 @@ const reservation = () => {
             <div className="col-md-6 col-lg-6">
               <p className="subtitle-01">What we consulting</p>
               <h3 className="title-02 mar-bt-21">
-                <span>행복한심리상담센터</span>
+                <span>마인드케어센터</span>
                 <br />을 선택해야 하는 이유
               </h3>
               <div className="serv-content-02">
@@ -120,82 +122,7 @@ const reservation = () => {
               </h3>
             </div>
           </div>
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="accordion-01 acc-theme-02">
-                <h4 data-count="1" className="accordion-01__title expanded_yes">
-                  How do I know if the treatment will be beneficial?
-                </h4>
-                <div className="accordion-01__body">
-                  <div className="accordion-01__text">
-                    <p>
-                      <span></span>
-                      <a className="accordion-01__btn" href="#">
-                        view all
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                <h4 data-count="2" className="accordion-01__title expanded_no">
-                  How long will my treatment go on for?
-                </h4>
-                <div className="accordion-01__body">
-                  <div className="accordion-01__text">
-                    <p>
-                      <span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Integer nec odio. Praesent libero. Sed cursus ante
-                        dapibus diam. Sed nisi. Nulla quis sem at nibh elementum
-                        imperdiet. Duis sagittis ipsum. Praesent mauris nec
-                        tellus...
-                      </span>
-                      <a className="accordion-01__btn" href="#">
-                        view all
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                <h4 data-count="3" className="accordion-01__title expanded_no">
-                  How can therapy help me?
-                </h4>
-                <div className="accordion-01__body">
-                  <div className="accordion-01__text">
-                    <p>
-                      <span>
-                        Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                        tincidunt sed, euismod in, nibh. Quisque volutpat
-                        condimentum velit. Class aptent taciti sociosqu ad
-                        litora torquent per conubia nostra, per inceptos nam nec
-                        ante, urna non...
-                      </span>
-                      <a className="accordion-01__btn" href="#">
-                        view all
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                <h4 data-count="4" className="accordion-01__title expanded_no">
-                  What about medication vs. psychotherapy?
-                </h4>
-                <div className="accordion-01__body">
-                  <div className="accordion-01__text">
-                    <p>
-                      <span>
-                        Mauris ipsum. Nulla metus metus, ullamcorper vel,
-                        tincidunt sed, euismod in, nibh. Quisque volutpat
-                        condimentum velit. Class aptent taciti sociosqu ad
-                        litora torquent per conubia nostra, per inceptos nam nec
-                        ante, urna non...
-                      </span>
-                      <a className="accordion-01__btn" href="#">
-                        view all
-                      </a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <FaqAccodion />
         </div>
       </div>
     </main>

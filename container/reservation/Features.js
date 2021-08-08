@@ -14,7 +14,7 @@ function Features() {
       imgUrl: "/images/services/icon/services_icon_02.png",
     },
     {
-      title: "성장하는 행복한심리상담센터",
+      title: "성장하는 마인드케어센터",
       text: "수백, 수천건의 성공적 사례를 바탕으로, 저희는 매일 매달 매년 발전하고 있습니다.",
       imgUrl: "/images/services/icon/services_icon_03.png",
     },
