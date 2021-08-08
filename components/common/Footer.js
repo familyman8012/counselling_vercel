@@ -121,6 +121,43 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
+            <div className="col-sm-3 col-md-3 col-lg-3">
+              <div className="widget widget-quick-links">
+                <h3 className="widget-title">Quick Links</h3>
+                <ul className="widget-quick-links__list">
+                  <li>
+                    <Link href="/">
+                      <a>홈</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about">
+                      <a>심리상담센터소개</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/reservation">
+                      <a>상담예약</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/counselling">
+                      <a>칼럼</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blog">
+                      <a>새로운소식</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/notice">
+                      <a>Contacts</a>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
