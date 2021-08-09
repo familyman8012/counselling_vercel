@@ -14,7 +14,9 @@ function Header() {
             <div className="col-sm-4 col-md-4 col-lg-4 text-xs-center">
               <Link href="/">
                 <a className="logo">
-                  <img src="/images/logo.png" alt="" />
+                  <h1>
+                    <span className="blind">심리상담센터 마인드케어센터</span>
+                  </h1>
                 </a>
               </Link>
             </div>

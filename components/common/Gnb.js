@@ -7,8 +7,8 @@ function Gnb() {
   const menuLists = [
     { id: 1, link: "/", text: "홈", active: false },
     { id: 2, link: "/about", text: "심리상담센터소개", active: false },
-    { id: 3, link: "/reservation", text: "상담예약", active: false },
-    { id: 4, link: "/counselling", text: "상담신청작성", active: false },
+    { id: 3, link: "/reservation", text: "심리상담예약", active: false },
+    { id: 4, link: "/counselling", text: "심리상담신청작성", active: false },
     { id: 5, link: "/blog", text: "칼럼", active: false },
     { id: 6, link: "/notice", text: "새로운소식", active: false },
   ];

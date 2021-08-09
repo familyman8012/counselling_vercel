@@ -4,6 +4,11 @@ li {
   padding: 0;
   list-style: none;
 }
+.logo h1 {
+  width: 210px;
+  height: 54px;
+  background: url("../public/images/logo.png") no-repeat left top;
+}
 .blind {
   position: absolute;
   width: 1px;

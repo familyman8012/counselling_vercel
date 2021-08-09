@@ -14,7 +14,7 @@ const reservation = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <h2 className="page-title-01">상담예약</h2>
+              <h2 className="page-title-01">심리상담예약</h2>
             </div>
           </div>
           <div className="row">
@@ -42,14 +42,14 @@ const reservation = () => {
               <p className="subtitle-01 mar-top-83 mar-bt-18 mar-md-top-0">
                 We are here for you
               </p>
-              <h3 className="title-02 mar-bt-32">상담진행안내</h3>
+              <h3 className="title-02 mar-bt-32">심리상담 진행안내</h3>
               <div className="serv-content-01">
                 <p>
-                  상담신청 게시판에 상담 신청글을 양식에 맞게 올려주시고, 카카오
-                  채널로 말씀주시면, 상담선생님들이 확인 후 연락을 드리고
+                  심리상담신청 게시판에 상담 신청글을 양식에 맞게 올려주시고,
+                  카카오 채널로 말씀주시면, 선생님들이 확인 후 연락을 드리고
                   있습니다. 무료진단 후 정규 상담 및 코칭을 선택, 결제 하시면
-                  예약이 완료되며, 상담선생님과의 시간 조율 후 예약된 시간에
-                  상담 및 코칭이 진행됩니다.
+                  예약이 완료되며, 선생님과의 시간 조율 후 예약된 시간에 상담 및
+                  코칭이 진행됩니다.
                 </p>
               </div>
               <div className="counter-01">

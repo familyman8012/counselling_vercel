@@ -6,7 +6,7 @@ function StateCounter() {
     {
       id: 1,
       datacount: 150,
-      title: "이번 달 상담예약",
+      title: "이번 달 심리상담예약",
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ function StateCounter() {
     {
       id: 3,
       datacount: 7,
-      title: "상담사 수",
+      title: "심리상담사 수",
     },
   ];
   return stateCounters.map((stateCount) => (

@@ -106,8 +106,7 @@ export default function Home() {
                 <div className="about-us-content-01">
                   <p className="subtitle-01">Who we are</p>
                   <h3 className="title-02">
-                    당신을 위한
-                    <span>최상의 지원을 제공해드립니다.</span>
+                    당신을 위한 <span>최상의 심리상담을 제공해드립니다.</span>
                   </h3>
                   <div className="about-us-text-01 mar-bt-27">
                     <p>
@@ -133,7 +132,7 @@ export default function Home() {
               <div className="col-lg-12">
                 <p className="subtitle-01 text-center">What we offer for you</p>
                 <h3 className="title-03 text-center mar-bt-50">
-                  <strong>상담 및 코칭 안내</strong>
+                  <strong>심리상담 및 심리코칭 안내</strong>
                 </h3>
               </div>
             </div>
@@ -178,17 +177,20 @@ export default function Home() {
                   target="_blank"
                   rel="noopner noreferrer"
                 >
-                  상담신청
+                  무료진단 및 정식 상담 문의
                 </a>
               </div>
               <div className="col-sm-6 col-md-6 col-lg-6">
                 <div className="counselling-img-01">
                   <a
-                    href="http://pf.kakao.com/_xgxfuBs/chat"
+                    href="http://pf.kakao.com/_aFQms/chat"
                     target="_blank"
                     rel="noopner noreferrer"
                   >
-                    <img src="images/counselling/counselling_01.png" alt="" />
+                    <img
+                      src="images/counselling/counselling_01.png"
+                      alt="심리상담센터 마인드케어센터 카카오톡 채널"
+                    />
                   </a>
                 </div>
               </div>
@@ -328,7 +330,7 @@ export default function Home() {
               <div className="col-lg-12">
                 <p className="testimonials__subtitle">Testimonials</p>
                 <h3 className="testimonials__title">
-                  <span>COUNSELING REVIEW</span>
+                  <span>COUNSELLING REVIEW</span>
                 </h3>
               </div>
             </div>

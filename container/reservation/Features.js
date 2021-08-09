@@ -14,7 +14,7 @@ function Features() {
       imgUrl: "/images/services/icon/services_icon_02.png",
     },
     {
-      title: "성장하는 마인드케어센터",
+      title: "성장하는 심리상담센터, 마인드케어센터",
       text: "수백, 수천건의 성공적 사례를 바탕으로, 저희는 매일 매달 매년 발전하고 있습니다.",
       imgUrl: "/images/services/icon/services_icon_03.png",
     },
@@ -25,7 +25,7 @@ function Features() {
     },
     {
       title: "경력,경험",
-      text: "각 구성원들마다 최소 수백 건의 상담경험이 있는 분들만이 행복한 심리상담센터의 구성원이 될 수 있습니다.",
+      text: "각 구성원들마다 최소 수백 건의 상담경험이 있는 분들만이 마인드케어센터의 구성원이 될 수 있습니다.",
       imgUrl: "/images/services/icon/services_icon_05.png",
     },
     {

@@ -12,7 +12,7 @@ function Notice() {
     <div className="wrap_bbs">
       <div className="area_mvis bg_notice">
         <h2>새로운 소식과 이야기</h2>
-        <p>터닝포인트 마인드 케어를 사랑해주는 분들에게 전달하는 이야기</p>
+        <p>심리상담센터 마인드케어센터를 사랑해주는 분들에게 전달하는 이야기</p>
       </div>
       <div className="wrap_cont">
         <div className="notice">

@@ -8,8 +8,7 @@ function Freebanner() {
           <div className="col-lg-12">
             <div className="action-box-01__wrapp">
               <h3 className="action-box-01__title">
-                매일 선착순 10분 무료진단!
-                <span>마인드케어센터 카톡채널</span>
+                매일 선착순 10분 무료진단! <span>마인드케어센터 카톡채널</span>
               </h3>
               <p className="action-box-01__subtitle">
                 최고의 심리상담과 심리코칭을 통해 내담자 분들이 진정한 행복을
