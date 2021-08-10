@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { NextSeo } from "next-seo";
+import { RegisterSeo } from "../components/common/seoData";
 
 import { useRouter } from "next/router";
 import {
@@ -48,27 +48,7 @@ export default function Register({ providers, csrfToken }) {
   };
   return (
     <>
-      <NextSeo
-        canonical="https://mindcarecenter.org/register"
-        title="회원가입 | 심리상담센터 마인드케어센터"
-        description="회원가입시 무료진단 및 포인트적립 등 다양한 혜택을 드립니다."
-        openGraph={{
-          type: "website",
-          title: "회원가입 | 심리상담센터 마인드케어센터",
-          description: `회원가입시 무료진단 및 포인트적립 등 다양한 혜택을 드립니다.`,
-          url: "https://mindcarecenter.org/register",
-          // Multiple Open Graph images is only available in version `7.0.0-canary.0`+ of next
-          images: [
-            {
-              url: "https://mindcarecenter.org/seo/images/img_box_04.jpg",
-              width: 1200,
-              height: 630,
-              alt: "심리상담센터 마인드케어센터 소개 홍보이미지",
-            },
-          ],
-          site_name: "심리상담센터 마인드케어센터",
-        }}
-      />
+      <RegisterSeo />
       <div className="wrap_register">
         <h2>회원가입</h2>
         <form onSubmit={handleSubmit(onSumit)}>

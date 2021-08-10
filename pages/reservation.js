@@ -6,33 +6,12 @@ import Features from "../container/reservation/Features";
 import StrengthTab from "../container/reservation/StrengthTab";
 import Accordion from "../components/common/Accordion";
 import FaqAccodion from "../container/reservation/FaqAccodion";
-import { NextSeo } from "next-seo";
+import { ReservationSeo } from "../components/common/seoData";
 
 const reservation = () => {
   return (
     <>
-      <NextSeo
-        canonical="https://mindcarecenter.org/reservation"
-        title="심리상담 및 심리검사 예약 | 심리상담센터 마인드케어"
-        description="무료 심리진단 및 정식 심리상담까지 빠르게 예약하고, 당일 진행되는 마인드케어센터"
-        openGraph={{
-          type: "website",
-          title:
-            "심리상담 및 심리검사 예약, 빠르게 예약하고 당일 진행되는 마인드케어",
-          description: `우리는 내담자들을 위해 최대한 신속하게 도움을 드리고 있습니다.`,
-          url: "https://mindcarecenter.org/reservation",
-          // Multiple Open Graph images is only available in version `7.0.0-canary.0`+ of next
-          images: [
-            {
-              url: "https://mindcarecenter.org/images/seo/tip114t002503.jpg",
-              width: 1200,
-              height: 630,
-              alt: "심리상담센터 마인드케어센터 소개 홍보이미지",
-            },
-          ],
-          site_name: "심리상담센터 마인드케어센터",
-        }}
-      />
+      <ReservationSeo />
       <main className="content-row">
         <div className="page-title-wrapp">
           <div className="container">

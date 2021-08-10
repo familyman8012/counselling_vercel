@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { useSelector, useDispatch } from "react-redux";
 import { useSession } from "next-auth/client";
 import axios from "axios";
-import { NextSeo } from "next-seo";
+import { PaymentSeo, PaymentCompleteSeo } from "../components/common/seoData";
 
 function Payment() {
   const router = useRouter();
@@ -54,7 +54,6 @@ function Payment() {
   const { price, name, pg, username, email, userid } = payOption;
 
   function onClickRequest() {
-    console.log("phone phone", phone);
     if (phone === "" || phone === undefined) {
       alert("구매자 전화번호를 입력하셔야합니다.");
       return;
@@ -136,27 +135,7 @@ function Payment() {
   if (payComplete) {
     return (
       <>
-        <NextSeo
-          canonical="https://mindcarecenter.org/payment"
-          title="결제완료 | 심리상담센터 마인드케어센터"
-          description="마인드케어심리상담 프로그램을 선택해주셔서 감사합니다. 최상의 변화, 더 나은 심리상담을 제공하기 위해 앞으로도 노력하겠습니다."
-          openGraph={{
-            type: "website",
-            title: "결제완료 | 심리상담센터 마인드케어센터",
-            description: `마인드케어센터 결제완료페이지`,
-            url: "https://mindcarecenter.org/payment",
-            // Multiple Open Graph images is only available in version `7.0.0-canary.0`+ of next
-            images: [
-              {
-                url: "https://mindcarecenter.org/images/seo/tip114t002503.jpg",
-                width: 1200,
-                height: 630,
-                alt: "심리상담센터 마인드케어센터 소개 홍보이미지",
-              },
-            ],
-            site_name: "심리상담센터 마인드케어센터",
-          }}
-        />
+        <PaymentCompleteSeo />
         <div>
           <p>{item_name} 결제가 완료되었습니다.</p>
           <p>
@@ -190,27 +169,7 @@ function Payment() {
   }
   return (
     <>
-      <NextSeo
-        canonical="https://mindcarecenter.org/payment"
-        title="결제 | 심리상담센터 마인드케어센터"
-        description="행복으로 이끄는 마인드케어센터 심리상담 프로그램 결제페이지입니다."
-        openGraph={{
-          type: "website",
-          title: "결제 | 심리상담센터 마인드케어센터",
-          description: `행복으로 이끄는 마인드케어센터 심리상담 프로그램 결제페이지입니다.`,
-          url: "https://mindcarecenter.org/payment",
-          // Multiple Open Graph images is only available in version `7.0.0-canary.0`+ of next
-          images: [
-            {
-              url: "https://mindcarecenter.org/images/seo/tip114t002503.jpg",
-              width: 1200,
-              height: 630,
-              alt: "심리상담센터 마인드케어센터 소개 홍보이미지",
-            },
-          ],
-          site_name: "심리상담센터 마인드케어센터",
-        }}
-      />
+      <PaymentSeo />
       <div className="wrap_payment">
         <h2>결제하기</h2>
         <div className="wrap_box_area">

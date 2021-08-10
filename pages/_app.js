@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { DefaultSeo } from "next-seo";
+import { CommonSeo } from "../components/common/seoData";
 import { Provider } from "next-auth/client";
 import { Provider as ReduxProvider } from "react-redux";
 import { useRouter } from "next/router";
@@ -39,49 +39,7 @@ function MyApp({ Component, pageProps }) {
         session={pageProps.session}
       >
         {router.pathname !== "/signin" && <Header />}
-        <DefaultSeo
-          keywords="cake for a party, coffee"
-          additionalLinkTags={[
-            {
-              rel: "icon",
-              href: "/images/seo/favicon-32x32.png",
-            },
-            {
-              rel: "apple-touch-icon",
-              href: "/images/seo/apple-icon-76x76.png",
-              sizes: "76x76",
-            },
-            {
-              rel: "apple-touch-icon",
-              href: "/images/seo/apple-icon-120x120.jpg",
-              sizes: "120x120",
-            },
-          ]}
-          additionalMetaTags={[
-            {
-              name: "application-name",
-              content: "심리상담 마인드케어센터",
-            },
-            {
-              name: "msapplication-tooltip",
-              content: "마인드케어센터",
-            },
-            {
-              name: "viewport",
-              content: "width=device-width, initial-scale=1",
-            },
-          ]}
-          openGraph={{
-            type: "website",
-            locale: "ko_KR",
-            site_name: "심리상담 마인드케어센터",
-          }}
-          twitter={{
-            handle: "@handle",
-            site: "mindcarecenter.org",
-            cardType: "summary_large_image",
-          }}
-        />
+        <CommonSeo />
         <Component {...pageProps} />
         {router.pathname !== "/signin" && <Footer />}
       </Provider>

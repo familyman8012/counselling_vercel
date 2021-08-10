@@ -5,34 +5,12 @@ import StateCounter from "../container/main/StateCounter";
 import BestReview from "../container/main/BestReview";
 import VideoPlay from "../components/common/VideoPlay";
 import Link from "next/link";
-import { NextSeo } from "next-seo";
+import { IndexSeo } from "../components/common/seoData";
 
 export default function Home() {
   return (
     <div>
-      <NextSeo
-        canonical="https://mindcarecenter.org"
-        title="심리상담센터 마인드케어센터 내담자들을 행복으로 이끄는 심리상담 진행"
-        description="자존감높이는방법, PTSD, 공황장애, 불명증, ADHD, 불안장애 등 내담자들의 힘든 마음을 행복으로 이끄는 긍정심리학 기반의 심리상담을 진행하고 있습니다."
-        openGraph={{
-          type: "website",
-          title:
-            "심리상담센터 마인드케어센터 내담자들을 행복으로 이끄는 심리상담 진행",
-          description: `자존감높이는방법, 스트레스해소법, PTSD, 공황장애, 불명증, 
-          ADHD, 불안장애, 부부상담클리닉, 연애/재회등 내담자의 힘든 마음을 행복으로 이끄는 긍정심리학 기반의 심리상담센터 마인드케어센터로 오세요`,
-          url: "https://mindcarecenter.org",
-          // Multiple Open Graph images is only available in version `7.0.0-canary.0`+ of next
-          images: [
-            {
-              url: "https://mindcarecenter.org/seo/images/img_box_04.jpg",
-              width: 1200,
-              height: 630,
-              alt: "심리상담센터 마인드케어센터 홍보이미지",
-            },
-          ],
-          site_name: "심리상담센터 마인드케어센터",
-        }}
-      />
+      <IndexSeo />
       <main className="content-row">
         <div className="img-box-02">
           <div className="container">

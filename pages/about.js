@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import cn from "classnames";
 import SkillBar from "../container/about/SkillGraph";
 import Freebanner from "../components/Freebanner";
-import { NextSeo } from "next-seo";
+import { AboutSeo } from "../components/common/seoData";
 
 function About() {
   const [baron, setBaron] = useState(false);
@@ -14,28 +14,7 @@ function About() {
 
   return (
     <>
-      <NextSeo
-        canonical="https://mindcarecenter.org/about"
-        title="진정한 행복 최상의 변화 심리상담센터 마인드케어센터 소개 "
-        description="누구나 행복을 배울 수 있음에 대한 과학적 근거와 데이터에 기반한 긍정심리학을 바탕으로 올바른 심리상담을 통해 내담자분들의 최상의 변화를 돕고 있습니다."
-        openGraph={{
-          type: "website",
-          title:
-            "스트레스, 우울, 불안, 강박 등에 힘들어 심리상담을 통해 진정한 행복, 최상의 변화를 원한다면? 마인드케어소개",
-          description: `행복도 배울 수 있다는 것을 아시나요? 누구나 행복을 배울 수 있음에 대한 과학적 근거와 데이터에 기반한 긍정심리학. 최상의 변화를 가져다주는 마인드케어센터를 소개합니다.`,
-          url: "https://mindcarecenter.org/about",
-          // Multiple Open Graph images is only available in version `7.0.0-canary.0`+ of next
-          images: [
-            {
-              url: "https://mindcarecenter.org/images/seo/tip014t012590.jpg",
-              width: 1200,
-              height: 630,
-              alt: "심리상담센터 마인드케어센터 소개 홍보이미지",
-            },
-          ],
-          site_name: "심리상담센터 마인드케어센터",
-        }}
-      />
+      <AboutSeo />
       <div>
         <main className="content-row">
           <div className="page-title-wrapp">

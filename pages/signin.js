@@ -2,7 +2,7 @@ import { getProviders, getCsrfToken } from "next-auth/client";
 import SocialLogin from "../components/common/SocialLogin";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import { NextSeo } from "next-seo";
+import { SignInSeo } from "../components/common/seoData";
 
 export default function SignIn({ providers, csrfToken }) {
   const router = useRouter();
@@ -13,7 +13,7 @@ export default function SignIn({ providers, csrfToken }) {
   }
   return (
     <>
-      <NextSeo
+      <SignInSeo
         canonical="https://mindcarecenter.org/signin"
         title="로그인 | 심리상담센터 마인드케어센터"
         description="심리상담센터 마인드케어센터에 오신 것을 환영합니다."

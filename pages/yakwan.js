@@ -1,29 +1,10 @@
 import React from "react";
-import { NextSeo } from "next-seo";
-function yakwan() {
+import { YakwanSeo } from "../components/common/seoData";
+
+function Yakwan() {
   return (
     <>
-      <NextSeo
-        canonical="https://mindcarecenter.org/yakwan"
-        title="약관 | 심리상담센터 마인드케어센터"
-        description="심리상담센터 마인드케어센터 약관"
-        openGraph={{
-          type: "website",
-          title: "약관 | 심리상담센터 마인드케어센터",
-          description: `심리상담센터 마인드케어센터에 약관`,
-          url: "https://mindcarecenter.org/yakwan",
-          // Multiple Open Graph images is only available in version `7.0.0-canary.0`+ of next
-          images: [
-            {
-              url: "https://mindcarecenter.org/seo/images/img_box_04.jpg",
-              width: 1200,
-              height: 630,
-              alt: "심리상담센터 마인드케어센터 소개 홍보이미지",
-            },
-          ],
-          site_name: "심리상담센터 마인드케어센터",
-        }}
-      />
+      <YakwanSeo />
       <div className="wrap_yakwan">
         <h1>이용약관</h1>
         <div className="modal-body">
@@ -248,4 +229,4 @@ function yakwan() {
   );
 }
 
-export default yakwan;
+export default Yakwan;
