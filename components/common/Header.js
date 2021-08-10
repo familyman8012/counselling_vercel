@@ -5,13 +5,20 @@ import { signIn, signOut, useSession } from "next-auth/client";
 
 function Header() {
   const [session, loading] = useSession();
+  const [menuOpen, setmenuOpen] = useState(false);
 
   return (
     <header className="wrapp-header">
       <div className="header-box-01">
         <div className="container">
           <div className="row">
-            <div className="col-sm-4 col-md-4 col-lg-4 text-xs-center">
+            <div className="col-sm-4 col-md-4 col-lg-4 text-xs-center box_header_tool">
+              <span
+                className="btn_all_menu"
+                onClick={() => setmenuOpen(!menuOpen)}
+              >
+                <img src="images/btn_allmenu.svg" alt="모든메뉴" />
+              </span>
               <Link href="/">
                 <a className="logo">
                   <h1>
@@ -25,14 +32,16 @@ function Header() {
                 {!session && (
                   <>
                     <Link href="/signin">
-                      <a>Login</a>
+                      <a>로그인</a>
                     </Link>
                   </>
                 )}
                 {session && (
                   <>
-                    <span>{session.user.email}</span>
-                    <span onClick={() => signOut()}>Sign out</span>
+                    <span className="userinfo">{session.user.email}</span>
+                    <span className="btn_logout" onClick={() => signOut()}>
+                      로그아웃
+                    </span>
                   </>
                 )}
               </div>
@@ -54,13 +63,7 @@ function Header() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <div className="main-nav">
-                <div className="main-nav__btn">
-                  <div className="icon-left"></div>
-                  <div className="icon-right"></div>
-                </div>
-                <Gnb />
-              </div>
+              <Gnb open={menuOpen} />
             </div>
           </div>
         </div>

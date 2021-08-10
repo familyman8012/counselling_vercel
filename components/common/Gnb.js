@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-function Gnb() {
+function Gnb({ open }) {
   const router = useRouter();
   const menuLists = [
     { id: 1, link: "/", text: "홈", active: false },
@@ -13,7 +13,7 @@ function Gnb() {
     { id: 6, link: "/notice", text: "새로운소식", active: false },
   ];
   return (
-    <ul className="main-nav__list">
+    <ul className={"main-nav__list " + (open ? "active" : "")}>
       {menuLists.map((menuItem) => {
         const { link, text } = menuItem;
         return (

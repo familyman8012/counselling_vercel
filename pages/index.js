@@ -11,11 +11,11 @@ export default function Home() {
   return (
     <div>
       <IndexSeo />
-      <main className="content-row">
+      <main className="content-row wrap_index_main">
         <div className="img-box-02">
           <div className="container">
             <div className="row">
-              <div className="col-lg-12 text-left">
+              <div className="col-lg-12 text-left mainvis_area">
                 <p className="subtitle-07">
                   우리는 현실에서의 다양한 심리적인 어려움에 대한 해결을 필요로
                   하는 분들을 위한 심리상담센터입니다
@@ -27,9 +27,9 @@ export default function Home() {
                   <br /> 이끌 것입니다.
                 </h2>
 
-                <a className="btn-04">우리에 대하여</a>
+                <a className="btn-com btn-04">우리에 대하여</a>
                 <a
-                  className="btn-05"
+                  className="btn-com btn-05"
                   href="http://pf.kakao.com/_aFQms/chat"
                   target="_blank"
                   rel="noopner noreferrer"
@@ -43,7 +43,9 @@ export default function Home() {
         <div className="banners-promo-wrapp">
           <div className="banners-promo-wrapp-row">
             <div className="banners-promo-01">
-              <h3 className="banners-promo-01__title">관계문제를 위한</h3>
+              <h3 className="banners-promo-01__title title-comm">
+                관계문제를 위한
+              </h3>
               <div className="banners-promo-01__text">
                 <p>
                   관계에서의 어려움을 겪고 있다면 경험이 풍부한 당사의
@@ -59,7 +61,9 @@ export default function Home() {
               </ul>
             </div>
             <div className="banners-promo-02">
-              <h3 className="banners-promo-02__title">감정문제를 위한</h3>
+              <h3 className="banners-promo-02__title title-comm">
+                감정문제를 위한
+              </h3>
               <div className="banners-promo-02__text">
                 <p>
                   자존감/자신감 상실, 스트레스, 무기력, 좌절감 등 감정적으로
@@ -75,7 +79,9 @@ export default function Home() {
               </ul>
             </div>
             <div className="banners-promo-03">
-              <h3 className="banners-promo-03__title">비지니스 문제를 위한</h3>
+              <h3 className="banners-promo-03__title title-comm">
+                비지니스 문제를 위한
+              </h3>
               <div className="banners-promo-03__text">
                 <p>
                   직장, 직업, 성취에서의 성공을 막는 심리적 장애를
@@ -101,7 +107,7 @@ export default function Home() {
               <div className="col-sm-6 col-md-6 col-lg-6">
                 <div className="about-us-content-01">
                   <p className="subtitle-01">Who we are</p>
-                  <h3 className="title-02">
+                  <h3 className="title-02 title-comm">
                     당신을 위한 <span>최상의 심리상담을 제공해드립니다.</span>
                   </h3>
                   <div className="about-us-text-01 mar-bt-27">
@@ -114,7 +120,7 @@ export default function Home() {
                       내담자 분들을 위해 최선을 다하고 있습니다.
                     </p>
                   </div>
-                  <a href="#" className="btn-04">
+                  <a href="#" className="btn-04 btn-com">
                     우리에 대하여
                   </a>
                 </div>
@@ -127,7 +133,7 @@ export default function Home() {
             <div className="row">
               <div className="col-lg-12">
                 <p className="subtitle-01 text-center">What we offer for you</p>
-                <h3 className="title-03 text-center mar-bt-50">
+                <h3 className="title-03 text-center mar-bt-50 title-comm">
                   <strong>심리상담 및 심리코칭 안내</strong>
                 </h3>
               </div>
@@ -151,7 +157,7 @@ export default function Home() {
             <div className="row">
               <div className="col-sm-6 col-md-6 col-lg-6">
                 <p className="subtitle-01">FREE COUNSULTING</p>
-                <h3 className="title-02">
+                <h3 className="title-02 title-comm">
                   유료상담 전 <span>무료진단</span>
                 </h3>
                 <div className="counselling-text-01">
@@ -198,7 +204,7 @@ export default function Home() {
             <div className="row">
               <div className="col-lg-12">
                 <h6 className="subtitle-01 text-center">Insights and News</h6>
-                <h3 className="title-03 title-03--mr-01 text-center">
+                <h3 className="title-03 title-03--mr-01 text-center title-comm">
                   우리의 최신
                   <span>칼럼</span>
                 </h3>
@@ -325,7 +331,7 @@ export default function Home() {
             <div className="row">
               <div className="col-lg-12">
                 <p className="testimonials__subtitle">Testimonials</p>
-                <h3 className="testimonials__title">
+                <h3 className="testimonials__title title-comm">
                   <span>COUNSELLING REVIEW</span>
                 </h3>
               </div>
@@ -343,7 +349,7 @@ export default function Home() {
           <div className="faq-content-02">
             <div className="faq-content-02__wrapp">
               <h6 className="subtitle-03">Contacts</h6>
-              <h3 className="title-04">찾아오는 길</h3>
+              <h3 className="title-04 title-comm">찾아오는 길</h3>
               <div className="faq-content-02__text">
                 <p>
                   예약 상담 시, &#39;강남, 홍대, 신촌&#39; 등 서울의 편한 곳에서

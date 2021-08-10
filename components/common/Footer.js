@@ -167,12 +167,14 @@ const Footer = () => {
             <div className="col-lg-12">
               <p className="copy-footer-01__text">
                 <span>&copy; 2021 MINDCARE CENTER. All rights reserved.</span>
-                <Link href="/yakwan">
-                  <a>이용약관</a>
-                </Link>
-                <Link href="/policy">
-                  <a>개인정보처리방침</a>
-                </Link>
+                <span className="box_yakwan">
+                  <Link href="/yakwan">
+                    <a>이용약관</a>
+                  </Link>
+                  <Link href="/policy">
+                    <a>개인정보처리방침</a>
+                  </Link>
+                </span>
               </p>
             </div>
           </div>
