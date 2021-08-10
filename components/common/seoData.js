@@ -56,7 +56,7 @@ export function IndexSeo() {
     openGraph: {
       type: "website",
       title:
-        "심리상담센터 마인드케어센터 내담자들을 행복으로 이끄는 심리상담 진행",
+        "심리상담센터 마인드케어센터 | 내담자들을 행복으로 이끄는 심리상담 진행",
       description: `자존감높이는방법, 스트레스해소법, PTSD, 공황장애, 불명증, 
           ADHD, 불안장애, 부부상담클리닉, 연애/재회등 내담자의 힘든 마음을 행복으로 이끄는 긍정심리학 기반의 심리상담센터 마인드케어센터로 오세요`,
       url: "https://mindcarecenter.org",
@@ -77,7 +77,7 @@ export function IndexSeo() {
 export function AboutSeo() {
   const aboutSeoData = {
     canonical: "https://mindcarecenter.org/about",
-    title: "진정한 행복 최상의 변화 | 심리상담센터 마인드케어센터 소개 ",
+    title: "진정한 행복, 최상의 변화 | 심리상담센터 마인드케어센터 소개 ",
     description:
       "누구나 행복을 배울 수 있음에 대한 과학적 근거와 데이터에 기반한 긍정심리학을 바탕으로 올바른 심리상담을 통해 내담자분들의 최상의 변화를 돕고 있습니다.",
 
