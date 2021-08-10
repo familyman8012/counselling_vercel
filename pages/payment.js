@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useSelector, useDispatch } from "react-redux";
 import { useSession } from "next-auth/client";
 import axios from "axios";
+import { NextSeo } from "next-seo";
 
 function Payment() {
   const router = useRouter();
@@ -134,113 +135,159 @@ function Payment() {
   }
   if (payComplete) {
     return (
-      <div>
-        <p>{item_name} 결제가 완료되었습니다.</p>
-        <p>
-          결제내역은 마이페이지에서 조회가능하며, 환불을 원할시에는 채널톡으로
-          말씀주세요.
-        </p>
-        <ul>
-          <li>
-            <span>주문번호</span>
-            <span>{order_id}</span>
-          </li>
-          <li>
-            <span>결제정보</span>
-            <span>{payment_data.card_name}</span>
-            <span>{payment_data.card_no}</span>
-          </li>
-          <li>
-            <span>결제금액</span>
-            <span>{completeData?.data.price}</span>
-          </li>
-        </ul>
-        <div className="box_btns">
-          <span>홈으로</span>
-          <span>마이페이지</span>
+      <>
+        <NextSeo
+          canonical="https://mindcarecenter.org/payment"
+          title="결제완료 | 심리상담센터 마인드케어센터"
+          description="마인드케어심리상담 프로그램을 선택해주셔서 감사합니다. 최상의 변화, 더 나은 심리상담을 제공하기 위해 앞으로도 노력하겠습니다."
+          openGraph={{
+            type: "website",
+            title: "결제완료 | 심리상담센터 마인드케어센터",
+            description: `마인드케어센터 결제완료페이지`,
+            url: "https://mindcarecenter.org/payment",
+            // Multiple Open Graph images is only available in version `7.0.0-canary.0`+ of next
+            images: [
+              {
+                url: "https://mindcarecenter.org/images/seo/tip114t002503.jpg",
+                width: 1200,
+                height: 630,
+                alt: "심리상담센터 마인드케어센터 소개 홍보이미지",
+              },
+            ],
+            site_name: "심리상담센터 마인드케어센터",
+          }}
+        />
+        <div>
+          <p>{item_name} 결제가 완료되었습니다.</p>
+          <p>
+            결제내역은 마이페이지에서 조회가능하며, 환불을 원할시에는 채널톡으로
+            말씀주세요.
+          </p>
+          <ul>
+            <li>
+              <span>주문번호</span>
+              <span>{order_id}</span>
+            </li>
+            <li>
+              <span>결제정보</span>
+              <span>{payment_data.card_name}</span>
+              <span>{payment_data.card_no}</span>
+            </li>
+            <li>
+              <span>결제금액</span>
+              <span>{completeData?.data.price}</span>
+            </li>
+          </ul>
+          <div className="box_btns">
+            <span>홈으로</span>
+            <span>마이페이지</span>
+          </div>
         </div>
-      </div>
+      </>
     );
   }
   if (payComplete) {
   }
   return (
-    <div className="wrap_payment">
-      <h2>결제하기</h2>
-      <div className="wrap_box_area">
-        <div className="info">
-          <div className="box box_product">
-            <h3>주문 상품 정보</h3>
-            <div className="cont">
-              <div className="thumb">
-                <img
-                  src={Array.isArray(detailInfo) && detailInfo[0].imgUrl}
-                  alt=""
-                />
+    <>
+      <NextSeo
+        canonical="https://mindcarecenter.org/payment"
+        title="결제 | 심리상담센터 마인드케어센터"
+        description="행복으로 이끄는 마인드케어센터 심리상담 프로그램 결제페이지입니다."
+        openGraph={{
+          type: "website",
+          title: "결제 | 심리상담센터 마인드케어센터",
+          description: `행복으로 이끄는 마인드케어센터 심리상담 프로그램 결제페이지입니다.`,
+          url: "https://mindcarecenter.org/payment",
+          // Multiple Open Graph images is only available in version `7.0.0-canary.0`+ of next
+          images: [
+            {
+              url: "https://mindcarecenter.org/images/seo/tip114t002503.jpg",
+              width: 1200,
+              height: 630,
+              alt: "심리상담센터 마인드케어센터 소개 홍보이미지",
+            },
+          ],
+          site_name: "심리상담센터 마인드케어센터",
+        }}
+      />
+      <div className="wrap_payment">
+        <h2>결제하기</h2>
+        <div className="wrap_box_area">
+          <div className="info">
+            <div className="box box_product">
+              <h3>주문 상품 정보</h3>
+              <div className="cont">
+                <div className="thumb">
+                  <img
+                    src={Array.isArray(detailInfo) && detailInfo[0].imgUrl}
+                    alt=""
+                  />
+                </div>
+                <dl>
+                  <dt className="tit">
+                    {Array.isArray(detailInfo) && detailInfo[0].title}
+                  </dt>
+                  <dd className="price">
+                    {Array.isArray(selectPrice) &&
+                      selectPrice[0].price
+                        .toString()
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
+                    원
+                  </dd>
+                </dl>
               </div>
-              <dl>
-                <dt className="tit">
-                  {Array.isArray(detailInfo) && detailInfo[0].title}
-                </dt>
-                <dd className="price">
+            </div>
+            <div>
+              <div className="box box_user">
+                <h3>주문자 정보</h3>
+                <dl>
+                  <dt>{session?.user.name}</dt>
+                  <dd>
+                    <input
+                      type="tel"
+                      className="tel"
+                      name="tel"
+                      onChange={handleOnChage}
+                      value={phone}
+                      placeholder="구매자 전화번호 입력"
+                    />
+                  </dd>
+                  <dd>{session?.user.email}</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div className="priceInfo">
+            <div className="box box_price">
+              <h3>최종 결제금액</h3>
+              <p>
+                <span className="txt">총 결제금액</span>
+                <span className="price">
                   {Array.isArray(selectPrice) &&
                     selectPrice[0].price
                       .toString()
                       .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                   원
-                </dd>
-              </dl>
+                </span>
+              </p>
             </div>
-          </div>
-          <div>
-            <div className="box box_user">
-              <h3>주문자 정보</h3>
-              <dl>
-                <dt>{session?.user.name}</dt>
-                <dd>
-                  <input
-                    type="tel"
-                    className="tel"
-                    name="tel"
-                    onChange={handleOnChage}
-                    value={phone}
-                    placeholder="구매자 전화번호 입력"
-                  />
-                </dd>
-                <dd>{session?.user.email}</dd>
-              </dl>
+            <div className="box box_agree">
+              <input
+                type="checkbox"
+                checked={agree}
+                value={agree}
+                onChange={handleCheck}
+              />
+              구매조건 확인 및 결제진행에 동의
             </div>
-          </div>
-        </div>
-        <div className="priceInfo">
-          <div className="box box_price">
-            <h3>최종 결제금액</h3>
-            <p>
-              <span className="txt">총 결제금액</span>
-              <span className="price">
-                {Array.isArray(selectPrice) &&
-                  selectPrice[0].price
-                    .toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
-                원
-              </span>
-            </p>
-          </div>
-          <div className="box box_agree">
-            <input
-              type="checkbox"
-              checked={agree}
-              value={agree}
-              onChange={handleCheck}
-            />
-            구매조건 확인 및 결제진행에 동의
-          </div>
-          <div className="btn_pay" onClick={onClickRequest}>
-            결제하기
+            <div className="btn_pay" onClick={onClickRequest}>
+              결제하기
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
