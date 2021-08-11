@@ -648,6 +648,15 @@ h6 {
     width: 100%;
     font-weight: lighter;
   }
+  input[type="submit"] {
+    margin-bottom: 0;
+  }
+  .txt_read_yakawn {
+    margin: 0 0 1.5rem;
+    padding: 1.5rem 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(16, 22, 26, 0.15);
+  }
   .notice_yakwan {
     font-size: 12px;
     text-align: center;
@@ -725,10 +734,15 @@ h6 {
       width: 37.6rem;
     }
   }
+
   .login_mv {
     background: url("../public/images/login-bg.jpg") no-repeat left top;
     background-size: cover;
   }
+}
+.txt_read_yakawn {
+  font-size: 12px;
+  margin-top: 5px;
 }
 .box_login_social {
   button {
@@ -1024,7 +1038,22 @@ h6 {
   margin-left: 2rem;
   color: #42474c;
 }
-
+.privacypolicy {
+  border: 1px solid;
+  th,
+  td {
+    vertical-align: middle;
+  }
+  th {
+    text-align: center;
+    border: 1px solid;
+    background: #ddd;
+  }
+  td {
+    padding: 10px 0 0 10px;
+    border: 1px solid;
+  }
+}
 .wrap_yakwan {
   max-width: 100rem;
   margin: 3rem auto;
@@ -1032,6 +1061,9 @@ h6 {
     padding-left: 1.5rem;
     font-size: 20px;
   }
+}
+.cursor {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1080px) {
@@ -1302,5 +1334,12 @@ h6 {
     .login_mv {
       display: none;
     }
+  }
+  .wrap_yakwan {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .PrivacyPolicyCollect__Content-sc-1svom9t-1 h2 {
+    font-size: 20px;
   }
 }

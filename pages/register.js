@@ -143,10 +143,16 @@ export default function Register({ providers, csrfToken }) {
             )}
           <input type="submit" disabled={loading} value="동의하고 회원가입" />
         </form>
-        <p className="notice_yakwan">
-          이용약관, 개인정보 수집 및 이용, 개인정보 제공 내용을 확인하였고
-          동의합니다
-        </p>
+        <div className="txt_read_yakawn">
+          <a href="/yakwan" target="_blank" rel="noreferrer">
+            이용약관
+          </a>
+          ,{" "}
+          <a href="/policy2" target="_blank" rel="noreferrer">
+            개인정보 수집 및 이용
+          </a>
+          , 내용을 확인하였고 동의합니다.
+        </div>
         <SocialLogin providers={providers} csrfToken={csrfToken} />
       </div>
     </>

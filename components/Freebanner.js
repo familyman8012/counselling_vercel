@@ -19,14 +19,12 @@ function Freebanner() {
               </p>
             </div>
             <div className="action-box-01__btn-wrapp">
-              <a
-                className="action-box-01__btn"
-                href="http://pf.kakao.com/_aFQms/chat"
-                target="_blank"
-                rel="noopner noreferrer"
+              <span
+                className="action-box-01__btn cursor"
+                onClick={() => ChannelIO("show")}
               >
                 무료진단 & 정규상담 문의
-              </a>
+              </span>
             </div>
           </div>
         </div>

@@ -28,14 +28,12 @@ export default function Home() {
                 </h2>
 
                 <a className="btn-com btn-04">우리에 대하여</a>
-                <a
-                  className="btn-com btn-05"
-                  href="http://pf.kakao.com/_aFQms/chat"
-                  target="_blank"
-                  rel="noopner noreferrer"
+                <span
+                  className="btn-com btn-05 cursor"
+                  onClick={() => ChannelIO("show")}
                 >
                   예약하기
-                </a>
+                </span>
               </div>
             </div>
           </div>
@@ -175,14 +173,12 @@ export default function Home() {
                     </span>
                   </p>
                 </div>
-                <a
-                  className="counselling-btn"
-                  href="http://pf.kakao.com/_aFQms/chat"
-                  target="_blank"
-                  rel="noopner noreferrer"
+                <span
+                  className="counselling-btn cursor"
+                  onClick={() => ChannelIO("show")}
                 >
                   무료진단 및 정식 상담 문의
-                </a>
+                </span>
               </div>
               <div className="col-sm-6 col-md-6 col-lg-6">
                 <div className="counselling-img-01">
