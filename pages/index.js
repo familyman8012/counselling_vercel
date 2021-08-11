@@ -108,16 +108,18 @@ export default function Home() {
                 <div className="about-us-content-01">
                   <p className="subtitle-01">Who we are</p>
                   <h3 className="title-02 title-comm">
-                    당신을 위한 <span>최상의 심리상담을 제공해드립니다.</span>
+                    <span>
+                      최상의 심리상담을 제공하는 심리상담센터 - 마인드케어센터
+                    </span>
                   </h3>
                   <div className="about-us-text-01 mar-bt-27">
                     <p>
                       우리는 엄격한 심사를 통과한 심리학과 석사이상의
                       심리상담사들 및 현실에서의 문제를 해결할 수 있는 다양한
-                      분야의 전문가들, 심리학자, 심리상담사, 심리코치들로 구성한
-                      최적의 규모를 가진 회사입니다. 현실에서의 문제를 해결하기
-                      위해 경험이 많고 유능한 분들이 가치와 비젼을 함께 공유하며
-                      내담자 분들을 위해 최선을 다하고 있습니다.
+                      분야의 전문가들로 구성된 심리상담센터입니다. 현실에서의
+                      문제를 해결하기 위해 경험이 많고 유능한 분들이 가치와
+                      비젼을 함께 공유하며 내담자 분들을 위해 최선을 다하고
+                      있습니다.
                     </p>
                   </div>
                   <a href="#" className="btn-04 btn-com">
@@ -134,7 +136,7 @@ export default function Home() {
               <div className="col-lg-12">
                 <p className="subtitle-01 text-center">What we offer for you</p>
                 <h3 className="title-03 text-center mar-bt-50 title-comm">
-                  <strong>심리상담 및 심리코칭 안내</strong>
+                  <strong>심리상담센터 프로그램 안내</strong>
                 </h3>
               </div>
             </div>

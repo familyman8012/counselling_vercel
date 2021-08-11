@@ -57,12 +57,12 @@ const Product = () => {
         <>
           <NextSeo
             canonical={`https://mindcarecenter.org/products/${id}`}
-            title={`${detailInfo[0].title} | 심리상담센터 마인드케어센터`}
-            description={`마인드케어심리상담 ${detailInfo[0].title} 프로그램 안내 페이지입니다.`}
+            title={`${detailInfo[0].title} 를 위한 최선의 심리상담 |  마인드케어센터`}
+            description={`${detailInfo[0].title} 에 대한 고민, 마인드케어가 속 시원히 해결해드리겠습니다.`}
             openGraph={{
               type: "website",
-              title: `${detailInfo[0].title} | 심리상담센터 마인드케어센터`,
-              description: `마인드케어심리상담 ${detailInfo[0].title} 프로그램 안내 페이지입니다.`,
+              title: `${detailInfo[0].title} 를 위한 최선의 심리상담 |  마인드케어센터`,
+              description: `${detailInfo[0].title} 에 대한 고민, 마인드케어가 속 시원히 해결해드리겠습니다.`,
               url: `https://mindcarecenter.org/products/${id}`,
               // Multiple Open Graph images is only available in version `7.0.0-canary.0`+ of next
               images: [

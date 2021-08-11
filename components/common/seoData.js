@@ -48,16 +48,14 @@ export function CommonSeo() {
 export function IndexSeo() {
   const indexSeoData = {
     canonical: "https://mindcarecenter.org",
-    title:
-      "심리상담센터 마인드케어센터 | 내담자들을 행복으로 이끄는 심리상담 진행",
+    title: "나에게 딱 맞는 심리상담센터를 찾고 있다면? - 마인드케어센터",
     description:
-      "PTSD, 공황장애, 불명증, ADHD, 불안장애 등 내담자들의 힘든 마음을 행복으로 이끄는 긍정심리학 기반의 심리상담을 진행하고 있습니다.",
+      "PTSD, 공황장애, 불명증, ADHD, 불안장애 등 내담자들의 힘든 마음을 행복으로 이끄는 심리상담을 진행하고 있습니다.",
 
     openGraph: {
       type: "website",
-      title:
-        "심리상담센터 마인드케어센터 | 내담자들을 행복으로 이끄는 심리상담 진행",
-      description: `PTSD, 공황장애, 불명증, ADHD, 불안장애 등 내담자들의 힘든 마음을 행복으로 이끄는 긍정심리학 기반의 심리상담을 진행하고 있습니다.`,
+      title: "나에게 딱 맞는 심리상담센터를 찾고 있다면? - 마인드케어센터",
+      description: `PTSD, 공황장애, 불명증, ADHD, 불안장애 등 내담자들의 힘든 마음을 행복으로 이끄는 심리상담을 진행하고 있습니다.`,
       url: "https://mindcarecenter.org",
       images: [
         {
@@ -76,15 +74,14 @@ export function IndexSeo() {
 export function AboutSeo() {
   const aboutSeoData = {
     canonical: "https://mindcarecenter.org/about",
-    title: "진정한 행복, 최상의 변화 | 심리상담센터 마인드케어센터 소개 ",
+    title: "최상의 변화를 위한 심리상담 - 마인드케어센터 소개",
     description:
-      "누구나 행복을 배울 수 있음에 대한 과학적 근거와 데이터에 기반한 긍정심리학을 바탕으로 내담자분들의 최상의 변화를 돕고 있습니다.",
+      "스트레스, 우울, 불안, 가족관계, 부부, 연인관계 등, 여러가지 이유로 마음이 힘들어질 때가 있습니다. 진정한 행복 마인드케어센터에서는 누구나 행복을 배울 수 있음에 대한 과학적 근거와 데이터에 기반한 긍정심리학을 바탕으로한 심리상담을 제공하고 있습니다.",
 
     openGraph: {
       type: "website",
-      title:
-        "스트레스, 우울, 불안, 강박 등에 힘들어 심리상담을 통해 진정한 행복, 최상의 변화를 원한다면? 마인드케어소개",
-      description: `누구나 행복을 배울 수 있음에 대한 과학적 근거와 데이터에 기반한 긍정심리학을 바탕으로 최상의 변화를 가져다주는 마인드케어센터를 소개합니다.`,
+      title: "최상의 변화를 위한 심리상담 - 마인드케어센터 소개",
+      description: `스트레스, 우울, 불안, 가족관계, 부부, 연인관계 등, 여러가지 이유로 마음이 힘들어질 때가 있습니다. 진정한 행복 마인드케어센터에서는 누구나 행복을 배울 수 있음에 대한 과학적 근거와 데이터에 기반한 긍정심리학을 바탕으로한 심리상담을 제공하고 있습니다.`,
       url: "https://mindcarecenter.org/about",
       images: [
         {
@@ -103,14 +100,13 @@ export function AboutSeo() {
 export function ReservationSeo() {
   const ReservationSeoData = {
     canonical: "https://mindcarecenter.org/reservation",
-    title: "심리상담 및 심리검사 예약 | 심리상담센터 마인드케어",
+    title: "오늘 심리검사 및 심리상담을 받고 싶다면? - 마인드케어 예약",
     description:
-      "무료 심리진단 및 정식 심리상담까지 빠르게 예약하고, 당일 진행되는 마인드케어센터",
+      "우리는 내담자들을 위해 최대한 신속하게 도움을 드리고 있습니다. 예약시스템을 확인 후 진행을 해주시면 최대한 당일 내에 상담이 이루어지도록 도와드리겠습니다.",
     openGraph: {
       type: "website",
-      title:
-        "심리상담 및 심리검사 예약, 빠르게 예약하고 당일 진행되는 마인드케어",
-      description: `우리는 내담자들을 위해 최대한 신속하게 도움을 드리고 있습니다.`,
+      title: "오늘 심리검사 및 심리상담을 받고 싶다면? - 마인드케어 예약",
+      description: `우리는 내담자들을 위해 최대한 신속하게 도움을 드리고 있습니다. 예약시스템을 확인 후 진행을 해주시면 최대한 당일 내에 상담이 이루어지도록 도와드리겠습니다.`,
       url: "https://mindcarecenter.org/reservation",
       images: [
         {
@@ -129,14 +125,14 @@ export function ReservationSeo() {
 export function CounsellingSeo() {
   const CounsellingSeoData = {
     canonical: "https://mindcarecenter.org/counselling",
-    title: "심리상담 신청작성 | 심리상담센터 마인드케어센터",
+    title: "철저한 맞춤 심리상담을 위한 상담신청작성 - 마인드케어센터",
     description:
-      "심리상담 진행 전, 상담신청서를 작성해주시기 바랍니다. 편하신 시간을 예약하신 후 무료진단, 무료진단 후 정식 심리상담이 진행됩니다.",
+      "마인드케어센터는 내담자 한 분, 한 분의 이야기를 주의깊게 듣고 철저한 맞춤형 상담이 이루어지고 있습니다. 상당 전 신청내용을 바탕으로 저희만의 MCI 진단을 통해 상담에 들어가게 됩니다.",
 
     openGraph: {
       type: "website",
-      title: "심리상담 신청작성 | 심리상담센터 마인드케어센터",
-      description: `심리상담 진행 전, 상담신청서를 작성해주시기 바랍니다. 편하신 시간을 예약하신 후 무료진단, 무료진단 후 정식 심리상담이 진행됩니다.`,
+      title: "철저한 맞춤 심리상담을 위한 상담신청작성 - 마인드케어센터",
+      description: `마인드케어센터는 내담자 한 분, 한 분의 이야기를 주의깊게 듣고 철저한 맞춤형 상담이 이루어지고 있습니다. 상당 전 신청내용을 바탕으로 저희만의 MCI 진단을 통해 상담에 들어가게 됩니다.`,
       url: "https://mindcarecenter.org/counselling",
       images: [
         {
@@ -181,12 +177,13 @@ export function NoticeSeo() {
 export function RegisterSeo() {
   const RegisterSeoData = {
     canonical: "https://mindcarecenter.org/register",
-    title: "회원가입 | 심리상담센터 마인드케어센터",
-    description: "회원가입시 무료진단 및 포인트적립 등 다양한 혜택을 드립니다.",
+    title: "심리상담센터 마인드케어센터 가입 - 인생의 터닝포인트",
+    description:
+      "다양한 원인과 이유로 마음이 힘들 때, 전문가의 도움을 필요로 할때 마인드케어센터로 오시면 인생의 전환점이 될 수 있는 심리상담을 받을 수 있습니다.",
     openGraph: {
       type: "website",
-      title: "회원가입 | 심리상담센터 마인드케어센터",
-      description: `회원가입시 무료진단 및 포인트적립 등 다양한 혜택을 드립니다.`,
+      title: "심리상담센터 마인드케어센터 가입 - 인생의 터닝포인트",
+      description: `다양한 원인과 이유로 마음이 힘들 때, 전문가의 도움을 필요로 할때 마인드케어센터로 오시면 인생의 전환점이 될 수 있는 심리상담을 받을 수 있습니다.`,
       url: "https://mindcarecenter.org/register",
       images: [
         {
@@ -205,12 +202,13 @@ export function RegisterSeo() {
 export function SignInSeo() {
   const SignInSeoData = {
     canonical: "https://mindcarecenter.org/signin",
-    title: "로그인 | 심리상담센터 마인드케어센터",
-    description: "심리상담센터 마인드케어센터에 오신 것을 환영합니다.",
+    title: "심리상담센터 마인드케어센터 로그인 - 행복으로의 로그인",
+    description:
+      "심리상담센터 마인드케어센터에 오신 것을 환영합니다. 내담자들을 위한 최선을 위한 혁신과 최상의 상담을 제공하고 있습니다.",
     openGraph: {
       type: "website",
-      title: "로그인 | 심리상담센터 마인드케어센터",
-      description: `심리상담센터 마인드케어센터에 로그인`,
+      title: "심리상담센터 마인드케어센터 로그인 - 행복으로의 로그인",
+      description: `심리상담센터 마인드케어센터에 오신 것을 환영합니다. 내담자들을 위한 최선을 위한 혁신과 최상의 상담을 제공하고 있습니다.`,
       url: "https://mindcarecenter.org/signin",
       images: [
         {
@@ -229,14 +227,14 @@ export function SignInSeo() {
 export function PaymentSeo() {
   const PaymentSeoData = {
     canonical: "https://mindcarecenter.org/payment",
-    title: "결제 | 심리상담센터 마인드케어센터",
+    title: "합리적인 심리상담비용 - 마인드케어센터 결제",
     description:
-      "행복으로 이끄는 마인드케어센터 심리상담 프로그램 결제페이지입니다.",
+      "최상의 심리상담을 진행하기 위해 최고의 선생님들을 모시고 있습니다. 저렴한 가격보다는 질높은 상담을 통해 최선의 변화와 만족감을 드리겠습니다.",
 
     openGraph: {
       type: "website",
-      title: "결제 | 심리상담센터 마인드케어센터",
-      description: `행복으로 이끄는 마인드케어센터 심리상담 프로그램 결제페이지입니다.`,
+      title: "합리적인 심리상담비용 - 마인드케어센터 결제",
+      description: `최상의 심리상담을 진행하기 위해 최고의 선생님들을 모시고 있습니다. 저렴한 가격보다는 질높은 상담을 통해 최선의 변화와 만족감을 드리겠습니다.`,
       url: "https://mindcarecenter.org/payment",
       images: [
         {
