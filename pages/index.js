@@ -109,12 +109,12 @@ export default function Home() {
                   <p className="subtitle-01">Who we are</p>
                   <h3 className="title-02 title-comm">
                     <span>
-                      최상의 심리상담을 제공하는 심리상담센터 - 마인드케어센터
+                      최고의 심리상담을 제공하는 심리상담센터 - 마인드케어센터
                     </span>
                   </h3>
                   <div className="about-us-text-01 mar-bt-27">
                     <p>
-                      우리는 엄격한 심사를 통과한 심리학과 석사이상의
+                      우리는 엄격한 심사를 통과한 심리학과 석사이상 출신의
                       심리상담사들 및 현실에서의 문제를 해결할 수 있는 다양한
                       분야의 전문가들로 구성된 심리상담센터입니다. 현실에서의
                       문제를 해결하기 위해 경험이 많고 유능한 분들이 가치와

@@ -48,13 +48,13 @@ export function CommonSeo() {
 export function IndexSeo() {
   const indexSeoData = {
     canonical: "https://mindcarecenter.org",
-    title: "최상의 심리상담을 제공하는 심리상담센터  - 마인드케어센터",
+    title: "최고의 심리상담을 제공하는 심리상담센터  - 마인드케어센터",
     description:
       "PTSD, 공황장애, 불명증, ADHD, 불안장애 등 내담자들의 힘든 마음을 행복으로 이끄는 심리상담을 진행하고 있습니다.",
 
     openGraph: {
       type: "website",
-      title: "최상의 심리상담을 제공하는 심리상담센터 - 마인드케어센터",
+      title: "최고의 심리상담을 제공하는 심리상담센터 - 마인드케어센터",
       description: `PTSD, 공황장애, 불명증, ADHD, 불안장애 등 내담자들의 힘든 마음을 행복으로 이끄는 심리상담을 진행하고 있습니다.`,
       url: "https://mindcarecenter.org",
       images: [
