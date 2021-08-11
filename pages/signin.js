@@ -79,13 +79,13 @@ export default function SignIn({ providers, csrfToken }) {
                   로그인
                 </button>
                 <div className="txt_read_yakawn">
-                  <a href="/yakwan" target="_blank" rel="noreferrer">
-                    이용약관
-                  </a>
+                  <Link href="/yakwan">
+                    <a>이용약관</a>
+                  </Link>
                   ,{" "}
-                  <a href="/policy2" target="_blank" rel="noreferrer">
-                    개인정보 수집 및 이용
-                  </a>
+                  <Link href="/policy2">
+                    <a>개인정보 수집 및 이용</a>
+                  </Link>
                   , 내용을 확인하였고 동의합니다.
                 </div>
               </form>
