@@ -12,7 +12,7 @@ const reservation = () => {
   return (
     <>
       <ReservationSeo />
-      <main className="content-row">
+      <main className="content-row wrap-reservation">
         <div className="page-title-wrapp">
           <div className="container">
             <div className="row">
@@ -32,10 +32,10 @@ const reservation = () => {
             </div>
           </div>
         </div>
-        <div className="content-box-01 pad-top-38 pad-bt-0">
+        <div className="content-box-01 pad-top-0 pad-bt-0">
           <div className="container">
             <div className="row">
-              <div className="col-md-12 col-lg-6">
+              <div className="col-md-12 col-lg-6 pad-left-right-0">
                 <div className="serv-img-01">
                   <img src="/images/services/services_img_01.jpg" alt="" />
                 </div>
@@ -45,7 +45,9 @@ const reservation = () => {
                 <p className="subtitle-01 mar-top-83 mar-bt-18 mar-md-top-0">
                   We are here for you
                 </p>
-                <h3 className="title-02 mar-bt-32">심리상담 진행안내</h3>
+                <h3 className="title-02 mar-bt-32 title-comm">
+                  심리상담 진행안내
+                </h3>
                 <div className="serv-content-01">
                   <p>
                     심리상담신청 게시판에 상담 신청글을 양식에 맞게 올려주시고,
@@ -68,7 +70,9 @@ const reservation = () => {
               <div className="col-lg-12">
                 <p className="subtitle-01 text-center">What we offer for you</p>
                 <h3 className="title-03 text-center mar-bt-50">
-                  <span>자신에게 맞는 프로그램을 선택해보세요.</span>
+                  <span className="title-comm">
+                    자신에게 맞는 프로그램을 선택해보세요.
+                  </span>
                 </h3>
               </div>
             </div>
@@ -88,8 +92,8 @@ const reservation = () => {
             <div className="row">
               <div className="col-md-6 col-lg-6">
                 <p className="subtitle-01">What we consulting</p>
-                <h3 className="title-02 mar-bt-21">
-                  <span>마인드케어센터</span>
+                <h3 className="title-02 mar-bt-21 title-comm">
+                  <span className="title-comm">마인드케어센터</span>
                   <br />을 선택해야 하는 이유
                 </h3>
                 <div className="serv-content-02">
@@ -105,7 +109,7 @@ const reservation = () => {
               <div className="col-md-6 col-lg-6">
                 <div className="chart-wrapp">
                   <p className="subtitle-01">Our benefits</p>
-                  <h3 className="title-02 mar-bt-21">성공지표</h3>
+                  <h3 className="title-02 mar-bt-21 title-comm">성공지표</h3>
                   <figure className="chart-in">
                     <img src="/images/services/chart_in.jpg" alt="" />
                   </figure>
@@ -119,7 +123,7 @@ const reservation = () => {
             <div className="row">
               <div className="col-lg-12">
                 <p className="subtitle-01">FAQ</p>
-                <h3 className="title-02 mar-bt-50">
+                <h3 className="title-02 mar-bt-50 title-comm">
                   자주 묻는
                   <span>질문</span>
                 </h3>

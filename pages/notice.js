@@ -19,7 +19,9 @@ function Notice() {
         </div>
         <div className="wrap_cont">
           <div className="notice">
-            <h3>[마인드 케어 최신 소식과 관련공지입니다.] </h3>
+            <h3 className="tit_news">
+              [마인드 케어 최신 소식과 관련공지입니다.]{" "}
+            </h3>
             <h2 className="tit_board">새로운 소식</h2>
             <BbsList swrdata={swrdata} category="새로운소식" />
           </div>

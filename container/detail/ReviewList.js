@@ -107,7 +107,9 @@ export default function ReviewList({ nowCategory }) {
     <div className="wrap_review">
       <h2 className="tit">구매평 </h2>
       <p className="txt">상품을 구매하신 분들이 작성한 리뷰입니다.</p>
-      <button onClick={writeItem}>구매평 작성</button>
+      <button className="btn_write_review" onClick={writeItem}>
+        구매평 작성
+      </button>
       <div className="tab_view_category">
         <span
           className={viewAll === true && "on"}

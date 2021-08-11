@@ -67,8 +67,10 @@ function BbsList({ swrdata, category }) {
           <li>
             <span className="no">No</span>
             <span className="title">제목</span>
-            <span className="username">글쓴이</span>
-            <span className="time">작성시간</span>
+            <span className="create_info">
+              <span className="username">글쓴이</span>
+              <span className="time">작성시간</span>
+            </span>
           </li>
           {swrdataList?.map((x, i) => {
             return (
@@ -85,11 +87,13 @@ function BbsList({ swrdata, category }) {
                       <span className="badge_my">My</span>
                     )
                   )}
-                  <span style={{ marginLeft: "15px" }}>{x.title}</span>
+                  <span className="txt">{x.title}</span>
                 </span>
-                <span className="username">{x.username}</span>
-                <span className="time">
-                  <Moment format="YYYY/MM/DD">{x.createdAt}</Moment>
+                <span className="create_info">
+                  <span className="username">{x.username}</span>
+                  <span className="time">
+                    <Moment format="YYYY/MM/DD">{x.createdAt}</Moment>
+                  </span>
                 </span>
               </li>
             );

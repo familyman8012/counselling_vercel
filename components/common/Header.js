@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Gnb from "./Gnb";
 import { signIn, signOut, useSession } from "next-auth/client";
+import { useRouter } from "next/router";
 
 function Header() {
   const [session, loading] = useSession();
-  const [menuOpen, setmenuOpen] = useState(false);
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const router = useRouter();
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      setMenuOpen(!isMenuOpen);
+    }
+  }, [router.asPath]);
 
   return (
     <header className="wrapp-header">
@@ -15,7 +24,7 @@ function Header() {
             <div className="col-sm-4 col-md-4 col-lg-4 text-xs-center box_header_tool">
               <span
                 className="btn_all_menu"
-                onClick={() => setmenuOpen(!menuOpen)}
+                onClick={() => setMenuOpen(!isMenuOpen)}
               >
                 <img src="images/btn_allmenu.svg" alt="모든메뉴" />
               </span>
@@ -63,7 +72,7 @@ function Header() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
-              <Gnb open={menuOpen} />
+              <Gnb open={isMenuOpen} />
             </div>
           </div>
         </div>

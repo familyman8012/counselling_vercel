@@ -61,13 +61,13 @@ h6 {
         margin: 0 auto;
         .wrap_simple_info {
           .title {
-            font-size: 2.2rem;
+            font-size: 22px;
           }
           .price {
             display: flex;
             width: 35rem;
             flex-wrap: wrap;
-            font-size: 1.6rem;
+            font-size: 16px;
             padding: 1.5rem 0 1rem;
             li {
               width: 50%;
@@ -79,19 +79,19 @@ h6 {
         .desc {
           height: 22rem;
           padding: 1.5rem 0;
-          font-size: 1.6rem;
+          font-size: 16px;
 
           border-top: 1px solid #ccc;
         }
         .box_sel_price {
           position: relative;
           .tit {
-            font-size: 1.2rem;
+            font-size: 12px;
             color: #000;
           }
           .selected_info {
             position: relative;
-            font-size: 1.4rem;
+            font-size: 14px;
             padding: 0.8rem 2.4rem 0.8rem 1.2rem;
             border: 1px solid #ddd;
             cursor: pointer;
@@ -125,9 +125,9 @@ h6 {
           }
         }
         .box_btns .btn {
-          font-size: 1.4rem;
-          width: 16.5rem;
-          line-height: 4.6rem;
+          font-size: 14px;
+          width: 165px;
+          line-height: 46px;
           background: #4f4f4f;
           padding: 0;
           margin: 1rem 0;
@@ -140,8 +140,8 @@ h6 {
 
 .wrap_tab {
   display: flex;
-  margin-top: 2rem;
-  line-height: 4.2rem;
+  margin-top: 20px;
+  line-height: 42px;
   border: 1px solid #ddd;
   li {
     width: 50%;
@@ -159,11 +159,11 @@ h6 {
 .wrap_review {
   padding-top: 8rem;
   .tit {
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: 600;
   }
   .txt {
-    font-size: 1.3rem;
+    font-size: 13px;
   }
   button {
     width: 10rem;
@@ -210,8 +210,8 @@ h6 {
   > li {
     display: flex;
     overflow: hidden;
-    height: 9.7rem;
-    padding: 0.5rem 0 1.1rem 0;
+    height: 97px;
+    padding: 5px 0 11px 0;
     cursor: pointer;
 
     &.active {
@@ -222,7 +222,7 @@ h6 {
       .box_right .box_btns {
         display: block;
         margin: 1rem 0;
-        font-size: 1.2rem;
+        font-size: 12px;
         span {
           cursor: pointer;
           &:last-child {
@@ -253,7 +253,7 @@ h6 {
       width: 80%;
       padding-right: 5rem;
       .anticon svg {
-        font-size: 1.2rem;
+        font-size: 12px;
       }
       .txt_area {
         overflow: hidden;
@@ -265,6 +265,7 @@ h6 {
       }
     }
     .box_right {
+      width: 72px;
       padding-top: 0.8rem;
       color: #838383;
       .box_btns {
@@ -278,7 +279,7 @@ h6 {
   display: block !important;
 }
 .anticon svg {
-  font-size: 1.2rem;
+  font-size: 12px;
 }
 
 .pop_review_write {
@@ -293,7 +294,7 @@ h6 {
   .tit {
     position: relative;
     border-bottom: 1px solid #e5e5e5;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: normal;
     text-align: center;
     line-height: 5rem;
@@ -325,7 +326,7 @@ h6 {
     }
     .txt {
       margin-left: 1.5rem !important;
-      font-size: 1.5rem;
+      font-size: 15px;
       font-weight: normal;
       margin-bottom: 0;
     }
@@ -334,17 +335,17 @@ h6 {
     padding: 4rem;
     text-align: center;
     h3 {
-      font-size: 1.8rem;
+      font-size: 18px;
     }
     .anticon svg {
-      font-size: 3rem;
+      font-size: 30px;
     }
   }
   .box_form {
     input,
     textarea {
       display: block;
-      font-size: 1.4rem;
+      font-size: 14px;
     }
     input {
       margin-bottom: 1rem;
@@ -360,7 +361,7 @@ h6 {
     }
   }
   .btn_submit {
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: bold;
     color: #fff;
     text-align: center;
@@ -386,13 +387,13 @@ h6 {
 .wrap_write_head {
   display: flex;
   width: 100vw;
-  height: 6.7rem;
+  height: 67px;
   padding: 0 3.4rem 0 1.7rem;
   margin-bottom: 3rem;
   align-items: center;
   border-bottom: 1px solid rgba(128, 128, 128, 0.3);
   .tit {
-    font-size: 2rem;
+    font-size: 20px;
   }
   .box_btn {
     margin-left: auto;
@@ -412,6 +413,7 @@ h6 {
     .quill_tit {
       margin-bottom: 2rem;
       padding-bottom: 0.5rem;
+      font-size: 16px;
       border: none;
       border-bottom: 1px solid rgba(128, 128, 128, 0.3);
     }
@@ -419,7 +421,7 @@ h6 {
       .quill_tit {
         width: 100%;
         margin-bottom: 0;
-        font-size: 2rem;
+        font-size: 20px;
       }
     }
   }
@@ -438,7 +440,7 @@ h6 {
   align-items: center;
   justify-content: center;
   background: url("../public/images/counselling/94eb6f5cb6d3e.jpg") no-repeat
-    left top;
+    center top;
 
   &.bg_notice {
     background: url("../public/images/counselling/twi001t1647609.jpg") no-repeat
@@ -453,14 +455,14 @@ h6 {
   width: 122rem;
   margin: 3rem auto;
   h3 {
-    font-size: 3rem;
+    font-size: 30px;
     font-weight: bold;
   }
   p {
-    font-size: 1.4rem;
+    font-size: 14px;
   }
   li {
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
   }
 }
 .wrap_bbs .wrap_cont {
@@ -474,6 +476,7 @@ h6 {
 }
 .wrap_board {
   overflow: hidden;
+  margin-bottom: 3rem;
   .rc-pagination {
     padding-top: 0.3rem;
   }
@@ -485,7 +488,7 @@ h6 {
   li {
     width: 100%;
     margin-bottom: 0;
-    font-size: 1.4rem;
+    font-size: 14px;
     line-height: 6.3rem;
     border-bottom: 1px solid #eee;
     cursor: pointer;
@@ -504,11 +507,14 @@ h6 {
     .title {
       width: 73%;
     }
-    .username {
-      width: 10%;
-    }
-    .time {
-      width: 12%;
+    .create_info {
+      width: 22%;
+      .username {
+        width: 45%;
+      }
+      .time {
+        width: 55%;
+      }
     }
   }
 }
@@ -534,15 +540,15 @@ h6 {
   }
   .view_top {
     .tit {
-      font-size: 2rem;
+      font-size: 20px;
       margin-bottom: 1.5rem;
     }
     .userName {
-      font-size: 1.4rem;
+      font-size: 14px;
     }
     .etc_info {
       margin-bottom: 2rem;
-      font-size: 1.3rem;
+      font-size: 13px;
       span {
         margin-right: 1.3rem;
       }
@@ -562,9 +568,9 @@ h6 {
     display: flex;
     button {
       display: block;
-      width: 7.7rem;
+      width: 77px;
       color: #ff5a5f;
-      line-height: 3.2rem;
+      line-height: 32px;
       border: 1px solid #ff5a5f;
       background: #fff;
       &:hover {
@@ -589,7 +595,7 @@ h6 {
   .h1 {
     margin-top: 8rem;
     color: white;
-    font-size: 2.5rem;
+    font-size: 25px;
     padding-bottom: 0px;
   }
 
@@ -612,7 +618,7 @@ h6 {
     border: 1px solid #ddd;
     padding: 1rem 1.5rem;
     margin-bottom: 1.5rem;
-    font-size: 1.4rem;
+    font-size: 14px;
   }
 
   .label,
@@ -622,7 +628,7 @@ h6 {
     display: block;
     margin-bottom: 1.3rem;
     margin-top: 2rem;
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 200;
   }
 
@@ -634,7 +640,7 @@ h6 {
     border: none;
     margin-top: 2rem;
     padding: 2rem;
-    font-size: 1.6rem;
+    font-size: 16px;
     font-weight: bold;
     display: block;
     appearance: none;
@@ -643,7 +649,7 @@ h6 {
     font-weight: lighter;
   }
   .notice_yakwan {
-    font-size: 1.2rem;
+    font-size: 12px;
     text-align: center;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
@@ -709,7 +715,7 @@ h6 {
     align-items: center;
     justify-content: center;
     h1 {
-      font-size: 1.8rem;
+      font-size: 18px;
       font-weight: bold;
     }
     h2 {
@@ -728,10 +734,10 @@ h6 {
   button {
     display: block;
     width: 100%;
-    border-radius: 0.3rem;
-    margin-bottom: 0.8rem;
+    border-radius: 3px;
+    margin-bottom: 8px;
     color: rgb(58, 58, 58);
-    line-height: 4.8rem;
+    line-height: 48px;
     text-align: center;
     font-weight: bold;
     border: 1px solid #aaa;
@@ -772,18 +778,18 @@ h6 {
   input {
     display: block;
     border: 1px solid rgb(215, 215, 215);
-    border-radius: 0.3rem;
+    border-radius: 3px;
     appearance: none;
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: normal;
-    line-height: 2rem;
+    line-height: 20px;
     letter-spacing: -0.15px;
     background-color: white;
-    height: 4.8rem;
+    height: 48px;
     width: 100%;
     color: rgb(26, 26, 26);
     box-sizing: border-box;
-    padding: 0px 1.6rem;
+    padding: 0px 16px;
   }
 }
 
@@ -793,7 +799,7 @@ h6 {
 
 .info_reg {
   display: flex;
-  font-size: 1.1rem;
+  font-size: 11px;
   .reg {
     margin-left: auto;
   }
@@ -804,9 +810,9 @@ h6 {
   color: white;
   text-transform: uppercase;
   border: none;
-  margin-top: 2rem;
+  margin-top: 40px;
   padding: 1.5rem;
-  font-size: 1.6rem;
+  font-size: 16px;
   font-weight: bold;
   display: block;
   -webkit-appearance: none;
@@ -825,11 +831,11 @@ h6 {
   }
   h2 {
     padding: 5rem 0 3rem;
-    font-size: 2.8rem;
+    font-size: 28px;
     text-align: center;
   }
   h3 {
-    font-size: 1.6rem;
+    font-size: 16px;
     margin-bottom: 1.5rem;
   }
   .info {
@@ -847,6 +853,8 @@ h6 {
     }
     &.box_user {
       .tel {
+        width: 80%;
+        height: 30px;
         margin-top: 1rem;
         padding-left: 1rem;
         border: 1px solid #ccc;
@@ -861,20 +869,20 @@ h6 {
       }
       .price {
         margin-left: auto;
-        font-size: 2rem;
+        font-size: 20px;
       }
     }
     .thumb {
-      width: 9rem;
-      height: 9rem;
-      margin-right: 1.5rem;
+      width: 90px;
+      height: 90px;
+      margin-right: 15px;
       img {
         width: 100%;
         height: 100%;
       }
     }
     .price {
-      font-size: 1.8rem;
+      font-size: 18px;
       font-weight: bold;
     }
   }
@@ -882,14 +890,14 @@ h6 {
     input {
       margin-right: 1rem;
     }
-    font-size: 1.3rem;
+    font-size: 13px;
   }
   .btn_pay {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 18px;
     font-weight: bold;
     text-align: center;
-    line-height: 5.3rem;
+    line-height: 53px;
     cursor: pointer;
     background: #000;
   }
@@ -913,7 +921,7 @@ h6 {
     z-index: 10;
   }
   .ant-spin-lg .ant-spin-dot {
-    font-size: 5.4rem;
+    font-size: 54px;
   }
   .ant-spin-lg .ant-spin-dot i {
     width: 2.5rem;
@@ -921,8 +929,8 @@ h6 {
   }
   .ant-spin.ant-spin-show-text .ant-spin-text {
     font-weight: bold;
-    font-size: 3rem;
-    color: black;
+    font-size: 30px;
+    color: rgb(63, 55, 55);
   }
 }
 
@@ -963,16 +971,17 @@ h6 {
 
 .board .anticon-lock {
   color: red;
+  margin-right: 15px;
   svg {
-    font-size: 1.6rem;
+    font-size: 16px;
   }
 }
 .badge_my {
-  line-height: 2.3rem;
+  line-height: 23px;
   background: blueviolet;
   color: #fff;
-  width: 4rem;
-  border-radius: 3rem;
+  width: 40px;
+  border-radius: 30px;
   text-align: center;
 }
 
@@ -980,7 +989,7 @@ h6 {
   display: flex;
   justify-content: center;
   button:after {
-    font-size: 2rem;
+    font-size: 20px;
     line-height: 2rem;
   }
 }
@@ -996,7 +1005,7 @@ h6 {
 
 .tab_view_category {
   margin-top: 2rem;
-  font-size: 1.3rem;
+  font-size: 13px;
   span {
     cursor: pointer;
     &:first-child {
@@ -1021,7 +1030,7 @@ h6 {
   margin: 3rem auto;
   h1 {
     padding-left: 1.5rem;
-    font-size: 2rem;
+    font-size: 20px;
   }
 }
 
@@ -1097,12 +1106,39 @@ h6 {
       line-height: 24px;
     }
   }
+  .serv-img-01 {
+    margin-top: 0;
+  }
+  .wrap-reservation {
+    .page-title-wrapp {
+      padding-top: 47px;
+    }
+    .pad-left-right-0 {
+      margin-bottom: 25px;
+    }
+    .treatments-box {
+      height: auto;
+      margin-bottom: 0;
+    }
+  }
   .btn-com {
     padding: 15px 20px;
   }
   .title-comm {
     font-size: 30px;
     line-height: 34px;
+  }
+  .title-comm2 {
+    font-size: 24px !important;
+    line-height: 34px !important;
+  }
+  .pad-left-right-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .blockel {
+    display: block !important;
   }
   .wrapp-footer {
     padding-top: 0;
@@ -1119,6 +1155,150 @@ h6 {
     .box_yakwan {
       display: block;
       margin: 15px 0;
+    }
+  }
+  .area_mvis {
+    height: 217px;
+    background-size: auto 100%;
+  }
+
+  .wrap_bbs .wrap_cont,
+  .notice,
+  .wrap_bbs_view {
+    width: 100%;
+  }
+
+  .wrap_bbs .wrap_cont .notice {
+    padding: 0 15px;
+    h3 {
+      font-size: 20px;
+      line-height: 1.2;
+      &.tit_news {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .tit_board,
+  .board li:first-child,
+  .board li .no {
+    display: none;
+  }
+
+  .board {
+    li {
+      padding: 10px 7px;
+      line-height: 25px;
+      .title {
+        width: auto;
+        .txt {
+          width: 95%;
+          display: inline-block;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .create_info {
+        display: block;
+        width: 100%;
+        color: rgba(64, 64, 64, 0.4);
+        .username,
+        .time {
+          width: fit-content;
+        }
+      }
+    }
+  }
+  .wrap_bbs_bottom {
+    position: relative;
+    margin: 20px 0;
+    .btn_write {
+      position: absolute;
+      width: fit-content;
+      right: 20px;
+      padding: 0 10px;
+      line-height: 28px;
+    }
+  }
+  .wrap_bbs_view {
+    padding: 0 15px;
+  }
+  .wrap_quill_editor {
+    width: 100%;
+    .write_creat_info {
+      padding: 0 15px;
+    }
+  }
+
+  .wrap_product_detail {
+    width: 100%;
+    margin: 0;
+    .top {
+      display: block;
+      .box_product_img,
+      .wrap_detail_info,
+      .wrap_detail_info .product_info {
+        width: 100%;
+      }
+      .wrap_detail_info {
+        padding: 20px 15px;
+        .product_info {
+          .wrap_simple_info .price {
+            width: 100%;
+          }
+          .desc {
+            height: auto;
+            padding: 20px 0;
+          }
+          .box_btns .btn {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+    .wrap_review {
+      padding: 0px 15px;
+      .btn_write_review {
+        width: 100px;
+        height: 40px;
+        margin-bottom: 30px;
+      }
+      .tab_view_category span:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+  .wrap_payment {
+    .wrap_box_area {
+      display: block;
+      .info {
+        margin: 0;
+      }
+    }
+    .box {
+      margin-bottom: 1.5rem;
+    }
+    .box {
+      &.box_product,
+      &.box_price {
+        width: 100%;
+      }
+    }
+  }
+  .wrap_register {
+    width: 80%;
+  }
+  .login_wrapper {
+    .login_area {
+      width: 100%;
+      .login_form {
+        width: auto;
+      }
+    }
+
+    .login_mv {
+      display: none;
     }
   }
 }

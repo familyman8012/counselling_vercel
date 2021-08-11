@@ -37,7 +37,7 @@ export default function SignIn({ providers, csrfToken }) {
       <div className="login_wrapper">
         <div className="login_area">
           <div className="login_form">
-            <h1>TURNING POINT</h1>
+            <h1>MINDCARE CENTER</h1>
             <h2>로그인</h2>
             <div>
               <SocialLogin providers={providers} csrfToken={csrfToken} />

@@ -231,7 +231,7 @@ const QuillEditor = (props) => {
         </span>
       </div>
       <div className="wrap_quill_editor">
-        <ul>
+        <ul className="write_creat_info">
           <li>
             <input
               type="text"

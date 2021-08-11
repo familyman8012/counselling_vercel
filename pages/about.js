@@ -49,8 +49,9 @@ function About() {
                     <p className="subtitle-01">
                       We are Private Psychiatry Clinic
                     </p>
-                    <h3 className="title-02">
-                      최상의 변화, <span>마인드케어센터</span>
+                    <h3 className="title-02 title-comm">
+                      최상의 변화,{" "}
+                      <span className="blockel">마인드케어센터</span>
                     </h3>
                     <div className="about-us-text-01">
                       <p>
@@ -130,7 +131,7 @@ function About() {
                   <p className="subtitle-01">
                     내담자들이 &#39;마인드케어센터&#39; 를 신뢰하는 이유
                   </p>
-                  <h3 className="title-03 title-03--mr-03">
+                  <h3 className="title-03 title-03--mr-03 title-comm">
                     People
                     <span>Trust Us</span>
                   </h3>

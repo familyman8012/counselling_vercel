@@ -44,6 +44,8 @@ function Counselling() {
                 https://seolleim.kr/notice/?idx=1628424&bmode=view
               </li>
             </ul>
+          </div>
+          <div>
             <h2 className="tit_board">심리상담</h2>
             <BbsList swrdata={swrdata} category="상담사연" />
           </div>
