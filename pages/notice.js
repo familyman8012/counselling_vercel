@@ -23,7 +23,9 @@ function Notice() {
               [마인드 케어 최신 소식과 관련공지입니다.]{" "}
             </h3>
             <h2 className="tit_board">새로운 소식</h2>
-            <BbsList swrdata={swrdata} category="새로운소식" />
+            <div className="wrap_news_board">
+              <BbsList swrdata={swrdata} category="새로운소식" />
+            </div>
           </div>
         </div>
       </div>

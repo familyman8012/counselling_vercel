@@ -1186,18 +1186,20 @@ h6 {
   }
 
   .board {
+    &.wrap_news_board {
+      .txt {
+        width: 95%;
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
     li {
       padding: 10px 7px;
       line-height: 25px;
       .title {
         width: auto;
-        .txt {
-          width: 95%;
-          display: inline-block;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis;
-        }
       }
       .create_info {
         display: block;
