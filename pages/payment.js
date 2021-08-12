@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useSession } from "next-auth/client";
 import axios from "axios";
 import { PaymentSeo, PaymentCompleteSeo } from "../components/common/seoData";
+import Link from "next/link";
 
 function Payment() {
   const router = useRouter();
@@ -136,12 +137,14 @@ function Payment() {
     return (
       <>
         <PaymentCompleteSeo />
-        <div>
-          <p>{item_name} 결제가 완료되었습니다.</p>
-          <p>
-            결제내역은 마이페이지에서 조회가능하며, 환불을 원할시에는 채널톡으로
-            말씀주세요.
-          </p>
+        <div className="wrap_pay_complete">
+          <div className="txt_area">
+            <p>{item_name} 결제가 완료되었습니다.</p>
+            <p>
+              결제내역은 마이페이지에서 조회가능하며,
+              <br /> 환불을 원할시에는 채널톡으로 말씀주세요.
+            </p>
+          </div>
           <ul>
             <li>
               <span>주문번호</span>
@@ -158,8 +161,12 @@ function Payment() {
             </li>
           </ul>
           <div className="box_btns">
-            <span>홈으로</span>
-            <span>마이페이지</span>
+            <Link href="/">
+              <a>홈으로</a>
+            </Link>
+            <Link href="/mypage">
+              <a>마이페이지</a>
+            </Link>
           </div>
         </div>
       </>

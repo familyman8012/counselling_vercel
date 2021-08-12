@@ -35,7 +35,11 @@ function Features() {
     },
   ];
 
-  return Feautres.map((item) => <FeaturesItem item={item} />);
+  return Feautres.map((item, i) => (
+    <React.Fragment key={`Feautres${i}`}>
+      <FeaturesItem item={item} />
+    </React.Fragment>
+  ));
 }
 
 export default Features;

@@ -9,8 +9,8 @@ function SkillBar({ baron }) {
   ];
   return (
     <ul className="skills_list process-skills-list">
-      {bars.map((bar) => (
-        <BarIncrease item={bar} baron={baron} />
+      {bars.map((bar, i) => (
+        <BarIncrease item={bar} baron={baron} key={`bar${i}`} />
       ))}
     </ul>
   );

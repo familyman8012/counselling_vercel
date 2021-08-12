@@ -5,27 +5,20 @@ import { useSession } from "next-auth/client";
 import axios from "axios";
 import { useRouter } from "next/router";
 import useSwrFetch from "../../hook/useSwrFetch";
-import useSwrCrud from "../../hook/useSwrCrud";
 
 export const modules = {
   toolbar: {
     container: [
-      ["bold", "italic", "underline", "strike"], // toggled buttons
-      ["blockquote", "code-block"],
-
-      [{ list: "ordered" }, { list: "bullet" }],
-      [{ script: "sub" }, { script: "super" }], // superscript/subscript
-      [{ indent: "-1" }, { indent: "+1" }], // outdent/indent
-      [{ direction: "rtl" }], // text direction
-
-      [{ size: ["small", false, "large", "huge"] }], // custom dropdown
+      [{ size: ["small", false, "large", "huge"] }],
+      // custom dropdown
       [{ header: [1, 2, 3, 4, 5, 6, false] }],
-
-      [{ color: [] }, { background: [] }], // dropdown with defaults from theme
       [{ font: [] }],
+      ["bold", "italic", "underline", "strike"], // toggled buttons
+      [{ list: "ordered" }, { list: "bullet" }],
       [{ align: [] }],
-      ["link", "image", "formula"],
-      ["clean"],
+      ["link", "image"],
+      ["blockquote"],
+      [{ color: [] }, { background: [] }], // dropdown with defaults from theme
     ],
   },
 };
@@ -172,8 +165,10 @@ const QuillEditor = (props) => {
     //   swrdata,
     //   mutate
     // );
+    mutate([variables, ...swrdata], false);
     axios.post("/api/post/post", variables).then(function (resp) {
-      mutate([...swrdata, resp], true);
+      // mutate([resp.data, ...swrdata], true);
+      mutate([resp.data, ...swrdata], false);
     });
     router.back();
   };
@@ -193,11 +188,7 @@ const QuillEditor = (props) => {
       return;
     }
 
-    axios
-      .put("/api/post/post", { p_id, username, title, cont })
-      .then(function (resp) {
-        mutate([...swrdata], true);
-      });
+    axios.put("/api/post/post", { p_id, username, title, cont });
 
     router.back();
     router.back();

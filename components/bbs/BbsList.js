@@ -59,6 +59,13 @@ function BbsList({ swrdata, category }) {
     }
     router.push(`/bbs/detail?p_id=${p_id}&category=${category}`, "/bbs/detail");
   };
+  //  {
+  //    totalCount - i - pageSize * (currentPage - 1);
+  //  }
+
+  const NumberBbbs = ({ i }) => {
+    return totalCount - i - pageSize * (currentPage - 1);
+  };
 
   return (
     <>
@@ -74,9 +81,9 @@ function BbsList({ swrdata, category }) {
           </li>
           {swrdataList?.map((x, i) => {
             return (
-              <li key={x._id} onClick={() => detailMove(x._id, x.userid)}>
+              <li key={`bbs${i}`} onClick={() => detailMove(x._id, x.userid)}>
                 <span className="no">
-                  {totalCount - i - pageSize * (currentPage - 1)}
+                  <NumberBbbs i={i} />
                 </span>
                 <span className="title">
                   {x.category === "상담사연" &&

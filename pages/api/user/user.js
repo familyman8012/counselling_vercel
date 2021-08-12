@@ -1,5 +1,5 @@
 import createHandler from "@/middleware";
-import Post from "@/models/post";
+import Payment from "@/models/payment";
 import User from "@/models/user";
 import crypto from "crypto";
 
@@ -41,7 +41,9 @@ handler.post(async (req, res) => {
 });
 
 handler.get(async (req, res) => {
-  const users = await User.find().populate("posts").exec();
+  const users = await User.find({ _id: req.query._id })
+    .populate("payments")
+    .exec();
 
   res.status(200).json(users);
 });

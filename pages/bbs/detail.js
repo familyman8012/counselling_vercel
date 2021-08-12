@@ -3,7 +3,6 @@ import useSwrFetch from "../../hook/useSwrFetch";
 import useSwrCrud from "../../hook/useSwrCrud";
 import { useRouter } from "next/router";
 import Moment from "react-moment";
-import axios from "../../node_modules/axios/index";
 
 function Bbsdetail() {
   //useRouter

@@ -1,5 +1,5 @@
 import React from "react";
-import { Spin } from "../../node_modules/antd/lib/index";
+import { Spin } from "antd";
 import { Loading3QuartersOutlined } from "@ant-design/icons";
 import Slider from "../../components/common/Swiper";
 import useSwrFetch from "../../hook/useSwrFetch";

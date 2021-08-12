@@ -3,7 +3,7 @@ import { Rate } from "antd";
 import useSwrFetch from "../../hook/useSwrFetch";
 import useSwrCrud from "../../hook/useSwrCrud";
 import { useSession } from "next-auth/client";
-import Moment from "../../node_modules/react-moment/dist/index";
+import Moment from "react-moment";
 import ReviewPopup from "../../container/detail/ReviewPopup";
 import useInputs from "../../hook/useInputs";
 import Pagination from "rc-pagination";
@@ -32,8 +32,6 @@ export default function ReviewList({ nowCategory }) {
           );
     }
   }, [viewAll, swrdata]);
-
-  console.log(swrdata);
 
   const dataList = useCallback(() => {
     if (Array.isArray(swrdata) && swrdata.length > 0) {
@@ -112,13 +110,13 @@ export default function ReviewList({ nowCategory }) {
       </button>
       <div className="tab_view_category">
         <span
-          className={viewAll === true && "on"}
+          className={viewAll === true ? "on" : ""}
           onClick={() => setViewAll(true)}
         >
           모든 상담 리뷰
         </span>
         <span
-          className={viewAll === false && "on"}
+          className={viewAll === false ? "on" : ""}
           onClick={() => setViewAll(false)}
         >
           현재 카테고리 리뷰
@@ -140,12 +138,12 @@ export default function ReviewList({ nowCategory }) {
                 <div className="wrap_left">
                   <Rate disabled={true} tooltips={x.desc} value={x.value} />
                   <div className="txt_area">
-                    {x.content?.split("\n").map((line) => {
+                    {x.content?.split("\n").map((line, i) => {
                       return (
-                        <>
+                        <React.Fragment key={`line${i}`}>
                           {line}
                           <br />
-                        </>
+                        </React.Fragment>
                       );
                     })}
                   </div>

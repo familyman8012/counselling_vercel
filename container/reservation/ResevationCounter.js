@@ -19,8 +19,8 @@ function StateCounter() {
       title: "심리상담사 수",
     },
   ];
-  return stateCounters.map((stateCount) => (
-    <div className="shortcode-counter">
+  return stateCounters.map((stateCount, i) => (
+    <div className="shortcode-counter" key={`stateCounters${i}`}>
       <CounterNumber key={stateCount.id} stateCount={stateCount} />
     </div>
   ));

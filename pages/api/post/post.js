@@ -28,7 +28,7 @@ handler.post(async (req, res) => {
       { $push: { posts: result._id } },
       { upsert: true }
     );
-    return res.status(200).json({ posts });
+    return res.status(200).json(posts);
   } catch (error) {
     return res.status(400).send(error.message);
   }

@@ -2,10 +2,13 @@ import React from "react";
 import useSwrFetch from "../hook/useSwrFetch";
 import BbsList from "../components/bbs/BbsList";
 import { CounsellingSeo } from "../components/common/seoData";
+import { Spin } from "antd";
 
 function Counselling() {
   // crud
-  const { swrdata, mutate } = useSwrFetch(`/api/post/post?category=상담사연`);
+  const { swrdata, isLoading } = useSwrFetch(
+    `/api/post/post?category=상담사연`
+  );
 
   return (
     <>
@@ -47,7 +50,13 @@ function Counselling() {
           </div>
           <div>
             <h2 className="tit_board">심리상담</h2>
-            <BbsList swrdata={swrdata} category="상담사연" />
+            {isLoading ? (
+              <div className="bbs_loading">
+                <Spin tip="Loading..." />
+              </div>
+            ) : (
+              <BbsList swrdata={swrdata} category="상담사연" />
+            )}
           </div>
         </div>
       </div>

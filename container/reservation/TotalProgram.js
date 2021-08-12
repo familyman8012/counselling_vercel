@@ -4,7 +4,11 @@ import { useSelector } from "react-redux";
 
 function TotalProgram() {
   const { consulting } = useSelector((state) => state.product);
-  return consulting.map((item) => <ServiceItem item={item} />);
+  return consulting.map((item, i) => (
+    <React.Fragment key={`consulting${i}`}>
+      <ServiceItem item={item} />
+    </React.Fragment>
+  ));
 }
 
 export default TotalProgram;

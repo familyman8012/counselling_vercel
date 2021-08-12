@@ -4,7 +4,7 @@ import SwiperCore, { Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Spin } from "../../node_modules/antd/lib/index";
+import { Spin } from "antd";
 import { Loading3QuartersOutlined } from "@ant-design/icons";
 
 // install Swiper modules

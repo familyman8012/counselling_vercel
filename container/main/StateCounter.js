@@ -28,10 +28,10 @@ function StateCounter() {
       title: "긍정적인 변화",
     },
   ];
-  return stateCounters.map((stateCount) => (
-    <div className="col-sm-3 col-md-3 col-lg-3">
+  return stateCounters.map((stateCount, i) => (
+    <div className="col-sm-3 col-md-3 col-lg-3" key={`stateCounter${i}`}>
       <div className="shortcode-counter counter-02">
-        <CounterNumber key={stateCount.id} stateCount={stateCount} />
+        <CounterNumber stateCount={stateCount} />
       </div>
     </div>
   ));
