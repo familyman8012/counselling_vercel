@@ -15,15 +15,25 @@ function Gnb({ open }) {
   return (
     <ul className={"main-nav__list " + (open ? "active" : "")}>
       {menuLists.map((menuItem) => {
-        const { link, text } = menuItem;
+        const { id, link, text } = menuItem;
         return (
           <li
             key={menuItem.id}
             className={router.pathname === link ? "active" : null}
           >
-            <Link href={link}>
-              <a>{text}</a>
-            </Link>
+            {id !== 5 ? (
+              <Link href={link}>
+                <a>{text}</a>
+              </Link>
+            ) : (
+              <a
+                href="https://blog.naver.com/mindcarecenter"
+                target="_blank"
+                rel="noopner noreferrer"
+              >
+                칼럼
+              </a>
+            )}
           </li>
         );
       })}

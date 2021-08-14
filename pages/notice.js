@@ -2,10 +2,13 @@ import React from "react";
 import useSwrFetch from "../hook/useSwrFetch";
 import BbsList from "../components/bbs/BbsList";
 import { NoticeSeo } from "../components/common/seoData";
+import { Spin } from "antd";
 
 function Notice() {
   // crud
-  const { swrdata, mutate } = useSwrFetch(`/api/post/post?category=새로운소식`);
+  const { swrdata, isLoading } = useSwrFetch(
+    `/api/post/post?category=새로운소식`
+  );
 
   return (
     <>
@@ -23,9 +26,13 @@ function Notice() {
               [마인드 케어 최신 소식과 관련공지입니다.]{" "}
             </h3>
             <h2 className="tit_board">새로운 소식</h2>
-            <div className="wrap_news_board">
+            {isLoading ? (
+              <div className="bbs_loading">
+                <Spin tip="Loading..." />
+              </div>
+            ) : (
               <BbsList swrdata={swrdata} category="새로운소식" />
-            </div>
+            )}
           </div>
         </div>
       </div>

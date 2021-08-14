@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import TherapiesSwiper from "../container/main/TherapiesSwiper";
@@ -6,11 +7,19 @@ import BestReview from "../container/main/BestReview";
 import VideoPlay from "../components/common/VideoPlay";
 import Link from "next/link";
 import { IndexSeo } from "../components/common/seoData";
+import { KakaoMapLauncher } from "../components/common/KakaoMap";
 
 export default function Home() {
+  useEffect(() => {
+    {
+      KakaoMapLauncher("map-canvas", 37.48456819620618, 126.88059249796527);
+    }
+  });
+
   return (
     <div>
       <IndexSeo />
+
       <main className="content-row wrap_index_main">
         <div className="img-box-02">
           <div className="container">
@@ -203,7 +212,6 @@ export default function Home() {
               <div className="col-lg-12">
                 <h6 className="subtitle-01 text-center">Insights and News</h6>
                 <h3 className="title-03 title-03--mr-01 text-center title-comm">
-                  우리의 최신
                   <span>칼럼</span>
                 </h3>
               </div>
