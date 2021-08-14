@@ -174,6 +174,9 @@ const Footer = () => {
                   <Link href="/policy">
                     <a>개인정보처리방침</a>
                   </Link>
+                  <Link href="/mypage">
+                    <a>구매내역 및 내정보</a>
+                  </Link>
                 </span>
               </p>
             </div>

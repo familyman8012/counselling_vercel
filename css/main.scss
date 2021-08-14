@@ -978,8 +978,32 @@ h6 {
 }
 
 .wrap_payed_info {
-  width: 800px;
+  display: flex;
+  width: 830px;
   margin: 5rem auto;
+
+  .payed_list {
+    margin-left: auto;
+    &.no {
+      margin: 30px 0 0 100px;
+    }
+  }
+  .userInfo {
+    .name {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .withdrawal {
+      margin-top: 10px;
+      color: #aaa;
+    }
+  }
+  .item {
+    margin-top: 50px;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
   .top {
     display: flex;
     .txt_pay_date {
@@ -1014,12 +1038,15 @@ h6 {
       color: #999;
       font-size: 11px;
     }
-    .box_btns .button {
-      border: 1px solid #ccc;
-      padding: 3px;
-      border-radius: 50px;
-      &:first-child {
-        margin-right: 10px;
+    .box_btns {
+      margin: 0 10px 0 auto;
+      .button {
+        border: 1px solid #ccc;
+        padding: 3px;
+        border-radius: 50px;
+        &:first-child {
+          margin-right: 10px;
+        }
       }
     }
   }
@@ -1443,5 +1470,22 @@ h6 {
   }
   .PrivacyPolicyCollect__Content-sc-1svom9t-1 h2 {
     font-size: 20px;
+  }
+  .wrap_payed_info {
+    display: block;
+    width: calc(100% - 20px);
+
+    margin: 30px 10px;
+    .userInfo {
+      border: 1px solid #ddd;
+      padding: 15px 20px;
+      margin: 0 0 30px;
+    }
+    .box_payment_info {
+      display: block;
+      .box {
+        width: 100%;
+      }
+    }
   }
 }

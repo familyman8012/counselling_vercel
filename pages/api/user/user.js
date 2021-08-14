@@ -41,11 +41,13 @@ handler.post(async (req, res) => {
 });
 
 handler.get(async (req, res) => {
-  const users = await User.find({ _id: req.query._id })
-    .populate("payments")
-    .exec();
+  if (req.query._id !== "undefined") {
+    const users = await User.find({ _id: req.query._id })
+      .populate("payments")
+      .exec();
 
-  res.status(200).json(users);
+    res.status(200).json(users);
+  }
 });
 
 export default handler;
