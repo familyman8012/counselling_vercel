@@ -97,7 +97,9 @@ export default function Register({ providers, csrfToken }) {
             })}
           />
           {errors.phone && errors.phone.type === "required" && (
-            <p>무료진단 및 상담진행을 위해 연락처가 필요합니다.</p>
+            <p>
+              정식상담 문의 진행 및 정식상담진행을 위해 연락처가 필요합니다.
+            </p>
           )}
           {errors.phone && errors.phone.type === "pattern" && (
             <p>연락처는 01012345678 처럼 숫자로만 입력해주세요.</p>

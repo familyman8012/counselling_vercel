@@ -167,17 +167,17 @@ export default function Home() {
               <div className="col-sm-6 col-md-6 col-lg-6">
                 <p className="subtitle-01">FREE COUNSULTING</p>
                 <h3 className="title-02 title-comm">
-                  유료상담 전 <span>무료진단</span>
+                  유료상담 전 <span>정식상담 문의</span>
                 </h3>
                 <div className="counselling-text-01">
                   <p>
                     본격적인 상담에 앞서, 내담자가 가지고 있는 문제상황을 미리
-                    파악하고, 보다 효과적인 상담방법을 적용하기 위해 무료진단을
-                    진행합니다. 나의 삶을 긍정적으로 이끌고 행복을 찾고
-                    싶으시다면 무료진단부터 받아보세요!
+                    파악하고, 보다 효과적인 상담방법을 적용하기 위해 정식상담
+                    문의를 진행합니다. 나의 삶을 긍정적으로 이끌고 행복을 찾고
+                    싶으시다면 정식상담 문의부터 받아보세요!
                     <br />
                     <span style={{ fontSize: "15px" }}>
-                      *무료진단은 카톡으로 신청되며, 약 10분간 유선상으로
+                      *정식상담 문의는은 카톡으로 신청되며, 약 10분간 유선상으로
                       진행됩니다.
                     </span>
                   </p>
@@ -186,7 +186,7 @@ export default function Home() {
                   className="counselling-btn cursor"
                   onClick={() => ChannelIO("show")}
                 >
-                  무료진단 및 정식 상담 문의
+                  정식 상담 문의
                 </span>
               </div>
               <div className="col-sm-6 col-md-6 col-lg-6">

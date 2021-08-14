@@ -100,12 +100,10 @@ const Footer = () => {
             </div>
             <div className="col-sm-3 col-md-3 col-lg-3">
               <div className="widget widget-latest-news">
-                <h3 className="widget-title">
-                  무료진단신청 및 정식상담문의 안내
-                </h3>
+                <h3 className="widget-title">정식상담 문의 안내</h3>
                 <ul className="widget-contacts__list">
                   <li>
-                    무료진단신청 및 정식상담문의
+                    정식상담 문의
                     <br />
                     <span>10.00 AM</span> ~<span>10.00 PM</span>
                     <br />

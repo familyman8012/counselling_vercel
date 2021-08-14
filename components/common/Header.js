@@ -55,7 +55,7 @@ function Header() {
                 )}
               </div>
               <span className="btn-app" onClick={() => ChannelIO("show")}>
-                무료진단 &amp; 정규상담 문의
+                정식상담 문의
               </span>
             </div>
           </div>
