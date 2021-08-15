@@ -1169,6 +1169,13 @@ h6 {
 }
 .privacypolicy {
   border: 1px solid;
+  &.sty2 {
+    width: 100%;
+    td {
+      width: 50%;
+      padding-bottom: 10px;
+    }
+  }
   th,
   td {
     vertical-align: middle;
@@ -1194,7 +1201,11 @@ h6 {
 .cursor {
   cursor: pointer;
 }
-
+.copy-footer-01__text {
+  .box_yakwan a {
+    font-size: 11px;
+  }
+}
 @media screen and (max-width: 1080px) {
   html {
     font-size: 7px;

@@ -60,6 +60,7 @@ const Footer = () => {
                       사업자정보확인
                     </a>
                   </li>
+                  <li>통신판매업신고번호 : 2021-서울구로-2064</li>
                   <li>
                     <a
                       className="contacts-email"
@@ -174,6 +175,9 @@ const Footer = () => {
                   </Link>
                   <Link href="/mypage">
                     <a>구매내역 및 내정보</a>
+                  </Link>
+                  <Link href="/refund">
+                    <a>환불정책</a>
                   </Link>
                 </span>
               </p>
