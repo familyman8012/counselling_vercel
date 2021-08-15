@@ -321,7 +321,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="parallax parallax-02">
+        <div className="parallax parallax-02 bestReview">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">

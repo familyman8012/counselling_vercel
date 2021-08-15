@@ -71,7 +71,7 @@ const Slider = ({ item, breakPoint, multiSlider }) => {
   ) : (
     <>
       {domReady && (
-        <Swiper className="mySwiper">
+        <Swiper className="mySwiper" navigation>
           {item?.map((slides, i) => {
             const { content, name, reviewTitle } = slides;
             return (

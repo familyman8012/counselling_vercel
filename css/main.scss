@@ -1206,6 +1206,13 @@ h6 {
     font-size: 11px;
   }
 }
+.bestReview {
+  .swiper-button-prev,
+  .swiper-button-next {
+    margin-top: -100px;
+    color: #fff;
+  }
+}
 @media screen and (max-width: 1080px) {
   html {
     font-size: 7px;
@@ -1497,6 +1504,13 @@ h6 {
       .box {
         width: 100%;
       }
+    }
+  }
+  .bestReview {
+    .swiper-button-prev,
+    .swiper-button-next {
+      margin-top: 0px;
+      color: #fff;
     }
   }
 }
