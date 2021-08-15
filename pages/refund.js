@@ -8,7 +8,7 @@ function Policy() {
       <div className="wrap_yakwan">
         <h1>환불정책 : 시행일자 : 2021.08.16</h1>
         <div className="modal-body">
-          <div class="BaseTypography__TextElement-sc-8ucuwh-0 ixguTs">
+          <div className="BaseTypography__TextElement-sc-8ucuwh-0 ixguTs">
             <br />
             안녕하세요. 심리상담센터 마인드케어센터입니다.
             <br />
@@ -19,11 +19,11 @@ function Policy() {
             <br />
             <br />
             <br />
-            <h4 class="BaseTypography__TextElement-sc-8ucuwh-0 bhViCI">
+            <h4 className="BaseTypography__TextElement-sc-8ucuwh-0 bhViCI">
               1. 상담환불정책
             </h4>
             <br />
-            <table class="privacypolicy sty2">
+            <table className="privacypolicy sty2">
               <thead>
                 <tr>
                   <th>환불요청일</th>
@@ -54,7 +54,7 @@ function Policy() {
               </tbody>
             </table>
             <h4
-              class="BaseTypography__TextElement-sc-8ucuwh-0 bhViCI"
+              className="BaseTypography__TextElement-sc-8ucuwh-0 bhViCI"
               style={{ marginTop: "50px" }}
             >
               2. 정책의 개정
