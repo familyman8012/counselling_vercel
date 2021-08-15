@@ -36,7 +36,14 @@ export default function Home() {
                   <br /> 이끌 것입니다.
                 </h2>
 
-                <a className="btn-com btn-04">우리에 대하여</a>
+                <a
+                  className="btn-com btn-04"
+                  target="_blank"
+                  href="https://blog.naver.com/mindcarecenter/222471868697"
+                  rel="noopner noreferrer"
+                >
+                  우리에 대하여
+                </a>
                 <span
                   className="btn-com btn-05 cursor"
                   onClick={() => ChannelIO("show")}
@@ -217,24 +224,23 @@ export default function Home() {
               </div>
             </div>
             <div className="row">
-              <div className="text-xs-center col-sm-4 col-md-4 col-lg-4">
+              <div
+                className="text-xs-center col-sm-4 col-md-4 col-lg-4 cursor"
+                onClick={() => alert("8월 18일 칼럼이 오픈됩니다.")}
+              >
                 <div className="featured-post-01">
                   <figure className="featured-post-01__img">
-                    <a href="blog_post_right_sidebar.html">
-                      <img
-                        src="images/shortcodes/featured_post/featured_post_01.jpg"
-                        alt=""
-                      />
-                    </a>
+                    <img
+                      src="images/shortcodes/featured_post/featured_post_01.jpg"
+                      alt=""
+                    />
                   </figure>
                   <div className="featured-post-01__content">
                     <h3 className="featured-post-01__content-title">
-                      <a href="blog_post_right_sidebar.html">
-                        긍정심리학은 무엇일까? 어둠의 터널에서 행복으로..
-                      </a>
+                      긍정심리학은 무엇일까? 어둠의 터널에서 행복으로..
                     </h3>
                     <ul className="featured-post-01__content-list">
-                      <li>7/25, 2021</li>
+                      <li>8/18, 2021</li>
                       {/* <li>
                         <a href="#">Infographics</a>
                       </li> */}
@@ -245,33 +251,27 @@ export default function Home() {
                         강화시킴으로써...
                       </p>
                     </div>
-                    <a
-                      href="blog_post_right_sidebar.html"
-                      className="featured-post-01__content-btn"
-                    >
-                      Learn more
-                    </a>
+                    <a className="featured-post-01__content-btn">Learn more</a>
                   </div>
                 </div>
               </div>
-              <div className="text-xs-center col-sm-4 col-md-4 col-lg-4">
+              <div
+                className="text-xs-center col-sm-4 col-md-4 col-lg-4 cursor"
+                onClick={() => alert("8월 20일 칼럼이 오픈됩니다.")}
+              >
                 <div className="featured-post-01">
                   <figure className="featured-post-01__img">
-                    <a href="blog_post_right_sidebar.html">
-                      <img
-                        src="images/shortcodes/featured_post/featured_post_02.jpg"
-                        alt=""
-                      />
-                    </a>
+                    <img
+                      src="images/shortcodes/featured_post/featured_post_02.jpg"
+                      alt=""
+                    />
                   </figure>
                   <div className="featured-post-01__content">
                     <h3 className="featured-post-01__content-title">
-                      <a href="blog_post_right_sidebar.html">
-                        성공을 이끄는 멘탈관리 6가지 방법
-                      </a>
+                      성공을 이끄는 멘탈관리 6가지 방법
                     </h3>
                     <ul className="featured-post-01__content-list">
-                      <li>7/27, 2021</li>
+                      <li>8/20, 2021</li>
                       {/* <li>
                         <a href="#">Infographics</a>
                       </li> */}
@@ -282,36 +282,30 @@ export default function Home() {
                         것부터, 목표한 바를 끈기있게..
                       </p>
                     </div>
-                    <a
-                      href="blog_post_right_sidebar.html"
-                      className="featured-post-01__content-btn"
-                    >
-                      Learn more
-                    </a>
+                    <a className="featured-post-01__content-btn">Learn more</a>
                   </div>
                 </div>
               </div>
-              <div className="text-xs-center col-sm-4 col-md-4 col-lg-4">
+              <div
+                className="text-xs-center col-sm-4 col-md-4 col-lg-4 cursor"
+                onClick={() => alert("8월 23일 칼럼이 오픈됩니다.")}
+              >
                 <div className="featured-post-01">
                   <figure className="featured-post-01__img">
-                    <a href="blog_post_right_sidebar.html">
-                      <img
-                        src="images/shortcodes/featured_post/featured_post_03.jpg"
-                        alt=""
-                      />
-                    </a>
+                    <img
+                      src="images/shortcodes/featured_post/featured_post_03.jpg"
+                      alt=""
+                    />
                   </figure>
                   <div className="featured-post-01__content">
                     <h3 className="featured-post-01__content-title">
-                      <a href="blog_post_right_sidebar.html">
-                        불안 장애: 나에게 맞는 치료법은?
-                      </a>
+                      불안 장애: 나에게 맞는 치료법은?
                     </h3>
                     <ul className="featured-post-01__content-list">
-                      <li>8/5, 2021</li>
-                      <li>
+                      <li>8/23, 2021</li>
+                      {/* <li>
                         <a href="#">Infographics</a>
-                      </li>
+                      </li> */}
                     </ul>
                     <div className="featured-post-01__content-text">
                       <p>
@@ -319,12 +313,7 @@ export default function Home() {
                         시간이 지날 수록...
                       </p>
                     </div>
-                    <a
-                      href="blog_post_right_sidebar.html"
-                      className="featured-post-01__content-btn"
-                    >
-                      Learn more
-                    </a>
+                    <a className="featured-post-01__content-btn">Learn more</a>
                   </div>
                 </div>
               </div>
