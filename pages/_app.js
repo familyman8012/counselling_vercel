@@ -25,6 +25,23 @@ import "swiper/components/scrollbar/scrollbar.scss";
 
 const store = createStore();
 
+function FacebookPixel() {
+  const router = useRouter();
+  React.useEffect(() => {
+    import("react-facebook-pixel")
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        ReactPixel.init("438261934192177");
+        ReactPixel.pageView();
+
+        router.events.on("routeChangeComplete", () => {
+          ReactPixel.pageView();
+        });
+      });
+  });
+  return null;
+}
+
 function MyApp({ Component, pageProps }) {
   const [showHeader, setShowHeader] = useState(true);
   const router = useRouter();
@@ -39,6 +56,7 @@ function MyApp({ Component, pageProps }) {
         session={pageProps.session}
       >
         {router.pathname !== "/signin" && <Header />}
+        <FacebookPixel />
         <CommonSeo />
         <Component {...pageProps} />
         {router.pathname !== "/signin" && <Footer />}
