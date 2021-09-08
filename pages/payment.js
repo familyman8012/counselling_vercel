@@ -46,7 +46,7 @@ function Payment() {
   const payOption = {
     price: Array.isArray(selectPrice) && selectPrice[0].price,
     name: Array.isArray(detailInfo) && detailInfo[0].title,
-    pg: "inicis",
+    pg: "kcp",
     username: session?.user.name,
     email: session?.user.email,
     phone,
