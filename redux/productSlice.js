@@ -71,7 +71,7 @@ const initialState = {
     {
       id: 1,
       title: "기본상담",
-      price: "100000",
+      price: "100",
       payUrl: "http://b2p.ooo/o/oy",
     },
     {
