@@ -116,7 +116,7 @@ export default function Home() {
           <div className="container">
             <div className="row">
               <div className="col-sm-6 col-md-6 col-lg-6">
-                <VideoPlay videoUrl="https://www.youtube.com/embed/E8tAmk2O9M0" />
+                <VideoPlay videoUrl="https://cultureplace.s3.ap-northeast-2.amazonaws.com/videoplayback.mp4" />
               </div>
               <div className="col-sm-6 col-md-6 col-lg-6">
                 <div className="about-us-content-01">
